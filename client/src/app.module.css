@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.container{
+    height: 100vh;
+    background-color: white;
+    scroll-snap-type:y mandatory;
+    scroll-behavior:smooth;
+    overflow-y: auto;
+}
+
