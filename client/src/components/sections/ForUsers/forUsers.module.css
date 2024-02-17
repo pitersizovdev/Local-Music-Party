@@ -1,5 +1,5 @@
 .section{
     height: 100vh;
-    background-color: lightseagreen;
+
     scroll-snap-align: center;
 }
