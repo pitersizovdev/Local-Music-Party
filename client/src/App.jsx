@@ -6,7 +6,7 @@ import ForUser from './components/sections/ForUsers/ForUser'
 import Faq from './components/sections/Faq/Faq'
 import Contact from './components/sections/Contact/Contact'
 import styles from './app.module.css'
-import Downl from './components/sections/Download/Download'
+import Download from './components/sections/Download/Download'
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <ForUser/>
       <Faq/>
       <Contact/>
-      <Downl/>
+      <Download/>
       </div>
     </div>
   )
