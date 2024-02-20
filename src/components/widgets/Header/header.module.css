@@ -1,0 +1,33 @@
+.header {
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0 0 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; 
+}
+
+nav ul li {
+    margin-right: 15px; 
+}
+
+button{
+    font-size: 18px;
+    background-color: #fcfcfc;
+    color: black;
+    border: 1px solid;
+    border-color: #fcfcfc;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+
+

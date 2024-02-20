@@ -1,0 +1,6 @@
+.section{
+    height: 100vh;
+    color: #fcfcfc;
+    scroll-snap-align: center;
+}
+
