@@ -1,19 +1,20 @@
 import React from 'react'
 import styles from './header.module.css'
+import { ReactComponent as Vk } from '../../../assets/svg/vk.svg';
+import { ReactComponent as Tel } from '../../../assets/svg/tel.svg';
+import { ReactComponent as Dis } from '../../../assets/svg/dis.svg';
+
 
 function Header() {
   return (
     <div  className={styles.header}>
-    <nav>
-        <ul>
-          <li>Главная</li>
-          <li>Приложение</li>
-          <li>Пользователям</li>
-          <li>ЧАВО</li>
-          <li>Контакты</li>
-        </ul>
+      <h2>Local music party</h2>
+      <nav>
+        <Vk/>
+        <Tel/>
+        <Dis/>
         <button>Скачать</button>
-    </nav>
+        </nav>
     </div>
   )
 }
