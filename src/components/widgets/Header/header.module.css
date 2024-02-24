@@ -2,15 +2,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 00 0 ;
-    }
+    padding: 32px 0 0;
+}
+
 nav {
     display: flex;
     gap: 50px;
     align-items: center;
 }
-nav button {
-    padding: 0px 16px;
+
+.downl {
+    padding: 0 16px;
     background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
     color: #fcfcfc;
     font-family: 'TTForsMedium', sans-serif;
@@ -18,3 +20,41 @@ nav button {
     border: none;
     border-radius: 24px;
 }
+
+.burger {
+    color: #fcfcfc;
+    font-size: 32px;
+    display: none;
+    background: none;
+    margin: 0 0 -10px 0;
+    border: none;
+}
+
+.lillogo3d {
+    width: 64px;
+    display: none;
+}
+
+
+
+@media (max-width: 800px) {
+    .appname {
+        display: none;
+    }
+    .socialmobile {
+      position: absolute;
+      display: none;
+      list-style: none;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      background-color: #697adf;
+      transition: all 0.5s ease-in-out;
+    }
+    .lillogo3d {
+        display: block;
+    }
+    .burger {
+      display: block;
+    }
+  }

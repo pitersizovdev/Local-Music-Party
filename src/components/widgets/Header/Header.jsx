@@ -4,20 +4,26 @@ import { ReactComponent as Vk } from '../../../assets/svg/vk.svg';
 import { ReactComponent as Tel } from '../../../assets/svg/tel.svg';
 import { ReactComponent as Dis } from '../../../assets/svg/dis.svg';
 import Lillogo3d from '../../../assets/img/lillogo3d.png';
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
+
   return (
     <div className={styles.header}>
-      <h2 className={styles.title}>Local music party</h2>
-      <nav className={styles.nav}>
+
+      <img className={styles.lillogo3d} src={Lillogo3d} alt="Logo" />
+      <h2 className={styles.appname}>Local music party</h2>
+
+      <nav className={styles.social}>
         <Vk />
         <Tel />
         <Dis />
-        <button>Скачать</button>
+        <button className={styles.downl}>Скачать</button>
       </nav>
+
     </div>
   );
 }
 
-export default Header; 
+export default Header;
 
