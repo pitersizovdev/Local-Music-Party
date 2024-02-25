@@ -58,12 +58,11 @@
   @media (max-width: 500px) {
 
     .title{
-      font-size: 64px;
-      margin-top: 6vh;
+      font-size: 52px;
     }
   
     .title2{
-      font-size: 18px;
+      font-size: 14px;
       margin-top: 6vh;
     }
   }
