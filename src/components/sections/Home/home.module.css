@@ -55,3 +55,16 @@
     }
   }
 
+  @media (max-width: 500px) {
+
+    .title{
+      font-size: 64px;
+      margin-top: 6vh;
+    }
+  
+    .title2{
+      font-size: 18px;
+      margin-top: 6vh;
+    }
+  }
+
