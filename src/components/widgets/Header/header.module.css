@@ -10,6 +10,9 @@
     gap: 50px;
     align-items: center;
 }
+.appname{
+    font-size: 36px;
+}
 
 .downl {
     padding: 0 16px;

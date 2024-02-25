@@ -1,5 +1,57 @@
-.section{
+.section {
     height: 100vh;
-    color: #fcfcfc;
     scroll-snap-align: center;
 }
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/img/logobg.png");
+    background-size: 91vh; 
+    background-repeat: no-repeat;
+    background-position: left;
+    z-index: -1;
+    opacity: 0.15;
+  }
+
+  .backgroundImage2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/img/logobg2.png");
+    background-size: 91vh; 
+    background-repeat: no-repeat;
+    background-position: left;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .title{
+    font-weight: bold;
+    font-size: 128px;
+    margin-top: 12vh;
+  }
+
+  .title2{
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 12vh;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  @media (max-width: 800px) {
+
+    .title{
+      font-size: 86px;
+    }
+  
+    .title2{
+      font-size: 24px;
+    }
+  }
+
