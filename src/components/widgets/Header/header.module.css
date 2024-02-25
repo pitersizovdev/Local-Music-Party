@@ -5,7 +5,7 @@
     padding: 32px 0 0;
 }
 
-nav {
+.social{
     display: flex;
     gap: 50px;
     align-items: center;
@@ -21,40 +21,31 @@ nav {
     border-radius: 24px;
 }
 
-.burger {
-    color: #fcfcfc;
-    font-size: 32px;
-    display: none;
-    background: none;
-    margin: 0 0 -10px 0;
-    border: none;
-}
-
 .lillogo3d {
     width: 64px;
     display: none;
 }
 
-
+.toggle{
+    display: none;
+}
 
 @media (max-width: 800px) {
+
+    .toggle{
+        display: block;
+    }
+    
     .appname {
         display: none;
     }
-    .socialmobile {
-      position: absolute;
-      display: none;
-      list-style: none;
-      left: 0;
-      top: 100%;
-      width: 100%;
-      background-color: #697adf;
-      transition: all 0.5s ease-in-out;
+    .social {
+        display: none;
     }
+
     .lillogo3d {
         display: block;
     }
-    .burger {
-      display: block;
-    }
   }
+
+
