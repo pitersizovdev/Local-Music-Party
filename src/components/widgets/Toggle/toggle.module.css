@@ -22,7 +22,7 @@ ul li{
 .toggleSocial{
     display: flex;
     position: absolute;
-    top: calc(100%+5px);
+    justify-content: center;
     right: 0vh;
     width: 50px;
     margin: 0 5.5% 0 0;
@@ -30,7 +30,6 @@ ul li{
     background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
     border-radius: 16px;
     border-top-right-radius: 4px;
-    justify-content: center;
 
     opacity: 0;
     visibility: hidden;
