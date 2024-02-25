@@ -33,13 +33,10 @@ ul li{
     justify-content: center;
 
     opacity: 0;
-    transform: translate(10px);
     visibility: hidden;
-    transition: 0.3s;
 }
 
 .toggleSocial.active{
-    transform: translateY(0);
     opacity: 1;
     visibility: visible;
 }
