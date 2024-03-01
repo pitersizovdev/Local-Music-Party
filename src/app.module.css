@@ -14,10 +14,11 @@
 
     backdrop-filter: blur(4px);
 
-    
-    background-color: #15092d;
-    background-image: radial-gradient(250% 200% at 0% 0%, rgb(65, 54, 204) 0%, rgba(32, 13, 51, 0) 60%, rgb(40, 31, 97) 500%);
-    
+ 
+    background: radial-gradient(ellipse at 0% 0%,#362f97, #281f61, rgba(32,13,51,1), #15092D, #15092D, #200D33, #281F61);
+
+ 
+
     scroll-snap-type:y mandatory;
     scroll-behavior:smooth;
     overflow-y: auto;
