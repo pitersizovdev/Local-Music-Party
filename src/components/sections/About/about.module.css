@@ -1,20 +1,83 @@
 .section {
-    height: 100vh;
-    scroll-snap-align: center;
-    overflow: hidden;
-  }
-  
-  h1 {
-    font-size: 128px;
-    margin-top: 32px;
-  }
-  
-  h3 {
-    font-weight: 500;
-    font-size: 36px;
-    text-shadow: 2px 2px 4px black;
-  }
-  
-  .mockupMap {
-    transform: scale(0.9);
-  }
+  height: 100vh;
+  scroll-snap-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 4%;
+}
+
+h1 {
+  font-size: 128px;
+  margin-top: 32px;
+}
+
+h3 {
+  font-weight: 500;
+  text-shadow: 2px 2px 4px black;
+  font-size: 40px;
+}
+
+.mockupMap {
+  transform: scale(0.9);
+  position: relative;
+  z-index: 1;
+}
+
+.blob1, .blob2, .blob3 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: auto;
+}
+.blob1img, .blob2img, .blob3img{
+  width: 100%;
+}
+
+.blob1 {
+  position: absolute;
+  top: 24%;
+  right: 0;
+
+}
+.blob1 h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 40px 0 40px 80px;
+  width: 600px;
+}
+
+.blob2 {
+  position: absolute;
+  top: 41%;
+  left: 0;
+}
+
+.blob2 h3 {
+  text-align:right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin: 80px 80px 0 0px;
+  width: 600px;
+}
+
+.blob3 {
+  position: absolute;
+  top: 70%;
+  right: 0;
+
+}
+.blob3 h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 40px 0 40px 80px;
+  width: 500px;
+}

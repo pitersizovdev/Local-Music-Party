@@ -1,7 +1,9 @@
 .section {
-    height: 100vh;
-    scroll-snap-align: center;
+  margin: 0 4%;
+  height: 100vh;
+  scroll-snap-align: center;
 }
+
 
 .backgroundImage {
     position: absolute;
