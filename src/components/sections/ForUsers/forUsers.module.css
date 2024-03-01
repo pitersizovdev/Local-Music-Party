@@ -1,5 +1,48 @@
-.section{
+.section {
     height: 100vh;
-
     scroll-snap-align: center;
-}
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .wrapper {
+    margin: 0 4%;
+    position: relative;
+  }
+  
+  .wrapper h1 {
+    font-size: 128px;
+    margin-top: 16px;
+  }
+  
+  .mockupMap {
+    transform: scale(0.9);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .titleStep1 {
+    text-align: right;
+    grid-area: step1;
+  }
+  
+  .titleStep2 {
+    text-align: right;
+    grid-area: step2;
+  }
+  
+  .titleStep3 {
+    text-align: right;
+    grid-area: step3;
+  }
+  
+  .blob5 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: grid;
+    grid-template-areas:
+      "step1 step2"
+      "step3 step2";
+    gap: 20px; /* Adjust the gap value as needed */
+  }
