@@ -1,5 +1,66 @@
-.section{
+.section {
     height: 100vh;
-
     scroll-snap-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .wrapper {
+    margin: 0 4%;
+    position: relative;
+  }
+
+  .titleOrg {
+    font-size: 128px;
+    margin-top: 16px;
+  }
+  
+  .logobg {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1; 
+
+  }
+
+  .titleArt{
+    text-align: center;
+    line-height:1;
+    font-size: 128px;
+  }
+
+  .mockupMap {
+    position: absolute;
+    right: 0;
+    transform: translateY(-32%);
+    z-index: 1;
+  }
+
+.blob4{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-20%);
+    width: 65%;
 }
+.blob4 h3{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.titleStep1{
+    transform: translateY(100%);
+    margin-left: 8%;
+}
+.titleStep2{
+    transform: translateY(300%);
+    margin-left: 60%;
+}
+
+.titleStep3{
+    transform: translateY(460%);
+    margin-left: 20%;
+}
+
