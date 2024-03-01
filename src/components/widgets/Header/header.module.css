@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0 0;
+}
+
+.social{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.appname{
+    font-size: 36px;
+}
+
+.downl {
+    padding: 0 16px;
+    background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
+    color: #fcfcfc;
+    font-family: 'TTForsMedium', sans-serif;
+    font-size: 24px;
+    border: none;
+    border-radius: 24px;
+}
+
+.lillogo3d {
+    width: 64px;
+    display: none;
+}
+
+.toggle{
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .toggle{
+        display: block;
+    }
+    
+    .appname {
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+
+    .lillogo3d {
+        display: block;
+    }
+  }
+
+
