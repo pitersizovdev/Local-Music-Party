@@ -1,5 +1,61 @@
-.section{
+.section {
     height: 100vh;
-
     scroll-snap-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0 4%;
+  }
+  
+  .wrapper h3 {
+    font-size: 48px;
+  }
+  .wrapper h4 {
+    font-size: 32px;
+  }
+
+  .accordion{
+    width: 80%;
+  }
+
+  .item{
+    background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
+    margin: 0 0 32px 0;
+    padding: 10px 20px;
+    border-radius: 16px ;
+  }
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .content.show {
+    max-height: 9999px;
+  }
+  .content.show h4{
+    max-height: 9999px;
+  }
+
+  .faqbg{
+    margin: 0 0 4% 4%;
+    margin-top: 16px;
+    font-size: 128px;
+  }
+
+  .FaChevronDown, .FaChevronUp{
+    font-size: 32px;
+    margin: 8px 10px 0 0;
+  }
