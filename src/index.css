@@ -19,7 +19,7 @@
   font-weight: bold;
 }
 
-body {
+body, textarea, input, select{
   margin: 0;
   font-family: 'TTForsRegular', sans-serif;
   color: #fcfcfc;
@@ -33,6 +33,6 @@ h1{
   font-family: 'TTForsBold', sans-serif;
 }
 
-h3{
+h3, button{
   font-family: 'TTForsMedium', sans-serif;
 }
