@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import styles from './faq.module.css'
 import { FaChevronDown } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa6";
+import Footer from '../../widgets/Footer/Footer'
 
 function Faq() {
 
@@ -16,6 +17,7 @@ function Faq() {
   }
 
   return (
+
     <div className={styles.section}>
       <h1 className={styles.faqbg}>FAQ</h1>
       <div className={styles.wrapper}>
@@ -28,11 +30,12 @@ function Faq() {
                 </div>
                 <div className={selected === i ? `${styles.content.show}` : styles.content}><h4>{item.a}</h4></div>
             </div>
-
           ))}
-
         </div>
       </div>
+      <footer>
+      <Footer/>
+      </footer>
     </div>
   )
 }

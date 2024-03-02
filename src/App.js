@@ -16,9 +16,9 @@ const App = () => {
       <About/>
       <ForOrg/>
       <ForUser/>
-      <Faq/>
-      <Contact/>
       <Download/>
+      <Contact/>
+      <Faq/>
       </div>
     </div>
   )

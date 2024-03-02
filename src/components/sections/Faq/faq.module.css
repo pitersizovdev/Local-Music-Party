@@ -1,12 +1,15 @@
 .section {
     height: 100vh;
     scroll-snap-align: center;
-    overflow: hidden;
-    position: relative;
-  }
-  
+    position: relative; 
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
   .wrapper {
-    height: 100vh;
     display: flex;
     justify-content: center;
     margin: 0 4%;
@@ -20,7 +23,7 @@
   }
 
   .accordion{
-    width: 80%;
+    width: 100%;
   }
 
   .item{
@@ -43,9 +46,6 @@
   }
   
   .content.show {
-    max-height: 9999px;
-  }
-  .content.show h4{
     max-height: 9999px;
   }
 

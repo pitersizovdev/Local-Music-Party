@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    margin: 1% 4%;
+  }
+  
+  .appname {
+    font-size: 36px;
+    margin-right: 6%;
+  }
+  
+  .social {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .copyright {
+    color: gray;
+    margin-left: auto;
+  }
