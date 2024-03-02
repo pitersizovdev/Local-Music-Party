@@ -1,5 +1,35 @@
-.section{
+.section {
     height: 100vh;
-
     scroll-snap-align: center;
-}
+    position: relative;
+  }
+  
+  .minilogo, .qr, .android, .ios {
+    position: absolute;
+  }
+  
+  .minilogo {
+    margin: 2%;
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
+  
+  .qr {
+    margin: 2%;
+    height: 100px;
+    top: 0;
+    right: 0;
+  }
+  
+  .android {
+    height: 200px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .ios {
+    height: 200px;
+    bottom: 0;
+    right: 0;
+  }
