@@ -44,9 +44,10 @@
     font-size: 36px;
     margin-top: 12vh;
     text-shadow: 2px 2px 4px black;
+    width: 450px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 762px) {
 
     .title{
       font-size: 86px;
@@ -60,12 +61,13 @@
   @media (max-width: 500px) {
 
     .title{
-      font-size: 52px;
+      font-size: 64px;
     }
   
     .title2{
-      font-size: 14px;
+      font-size: 32px;
       margin-top: 6vh;
+      width: 430px;
     }
   }
 

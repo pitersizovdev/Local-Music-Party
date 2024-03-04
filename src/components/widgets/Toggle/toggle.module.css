@@ -3,20 +3,20 @@ ul li{
     padding: 0;
     width: 100%;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .burger {
     color: #fcfcfc;
-    font-size: 32px;
+    font-size: 48px;
 }
 .cross{
     color: #fcfcfc;
-    font-size: 32px;
+    font-size: 48px;
 }
 
 .toggleIcon{
-    width: 24px;
+    width: 32px;
 }
 
 .toggleSocial{
@@ -25,12 +25,11 @@ ul li{
     justify-content: center;
     right: 0vh;
     width: 50px;
-    margin: 0 5.5% 0 0;
-    padding: 8px 0;
+    margin: 1% 5.5% 0 0;
+    padding: 16px 8px;
     background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
     border-radius: 16px;
     border-top-right-radius: 4px;
-
     opacity: 0;
     visibility: hidden;
 }

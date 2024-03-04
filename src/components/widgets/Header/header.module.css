@@ -25,7 +25,7 @@
 }
 
 .lillogo3d {
-    width: 64px;
+    width: 80px;
     display: none;
 }
 
@@ -33,7 +33,7 @@
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     .toggle{
         display: block;

@@ -1,65 +1,77 @@
 .section {
-    height: 100vh;
-    scroll-snap-align: center;
-    position: relative; 
+  height: 100vh;
+  scroll-snap-align: center;
+  position: relative; 
 }
-
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 0 4%;
-  }
-  
-  .wrapper h3 {
-    font-size: 48px;
-    text-shadow: none;
-  }
-  .wrapper h4 {
-    margin: 16px 0 8px 0;
-    font-size: 32px;
-  }
-
-  .accordion{
-    width: 100%;
-  }
-
-  .item{
-    background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
-    margin: 0 0 32px 0;
-    padding: 10px 20px;
-    border-radius: 16px ;
-  }
-
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 4%;
+}
+.accordion{
+  width: 100%;
+}
+.item{
+  background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
+  margin: 0 0 32px 0;
+  padding: 10px 20px;
+  border-radius: 16px ;
+}
+.item h3 {
+  font-size: 48px;
+  text-shadow: none;
+}
+.item h4 {
+  margin: 16px 0 8px 0;
+  font-size: 32px;
+}
 .title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+}
+.content.show {
+  max-height: 9999px;
+}
+.faqbg{
+  margin: 0 0 4% 4%;
+  margin-top: 16px;
+  font-size: 128px;
+}
+.FaChevronDown, .FaChevronUp{
+  font-size: 32px;
+  margin: 8px 10px 0 0;
 }
 
-
-
-.content {
-    max-height: 0;
-    overflow: hidden;
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
   }
-  
-  .content.show {
-    max-height: 9999px;
+  .faqbg {
+    font-size: 64px;
   }
-
-  .faqbg{
-    margin: 0 0 4% 4%;
-    margin-top: 16px;
-    font-size: 128px;
-  }
-
-  .FaChevronDown, .FaChevronUp{
+  .item h3 {
     font-size: 32px;
+    margin: 0 16px 0 0;
+  }
+  .item h4 {
+    margin: 16px 32px 8px 0;
+    font-size: 24px;
+  }
+  .FaChevronDown, .FaChevronUp{
+    font-size: 16px;
     margin: 8px 10px 0 0;
   }
+  
+}
+  

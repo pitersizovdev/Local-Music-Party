@@ -11,9 +11,9 @@ function Footer() {
       <div className={styles.footer}>
         <h2 className={styles.appname}>Local music party</h2>
         <nav className={styles.social}>
-          <Vk />
-          <Tel />
-          <Dis />
+          <Vk className={styles.footerIcon}/>
+          <Tel className={styles.footerIcon}/>
+          <Dis className={styles.footerIcon}/>
         </nav>
         <span className={styles.copyright}>©2024</span>
       </div>

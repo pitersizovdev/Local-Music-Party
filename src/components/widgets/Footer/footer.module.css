@@ -21,3 +21,16 @@
     color: gray;
     margin-left: auto;
   }
+
+  @media (max-width: 768px) {
+
+    .appname {
+      font-size: 24px;
+    }
+    .footerIcon{
+      width: 24px;
+    }
+    .social{
+      gap:25px;
+    }
+  }
