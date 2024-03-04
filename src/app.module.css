@@ -6,24 +6,13 @@
         display: none;
     }
 }
-.wrapper{
-    width: 100%;
-}
-.container{
+
+.bg{
     height: 100vh;
-
     backdrop-filter: blur(4px);
-
- 
     background: radial-gradient(ellipse at 0% 0%,#362f97, #281f61, rgba(32,13,51,1), #15092D, #15092D, #200D33, #281F61);
-
- 
-
     scroll-snap-type:y mandatory;
     scroll-behavior:smooth;
     overflow-y: auto;
-
-    display: flex;
-    justify-content: center;
 }
 

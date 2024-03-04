@@ -2,7 +2,10 @@ import React, {useState} from 'react'
 import styles from './faq.module.css'
 import { FaChevronDown } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa6";
-import Footer from '../../widgets/Footer/Footer'
+
+import { ReactComponent as Vk } from '../../../assets/svg/vk.svg';
+import { ReactComponent as Tel } from '../../../assets/svg/tel.svg';
+import { ReactComponent as Dis } from '../../../assets/svg/dis.svg';
 
 function Faq() {
 
@@ -19,7 +22,8 @@ function Faq() {
   return (
 
     <div className={styles.section}>
-      <h1 className={styles.faqbg}>FAQ</h1>
+      <h1>FAQ</h1>
+
       <div className={styles.wrapper}>
         <div className={styles.accordion}>
           {faq.map((item, i)=>(
@@ -33,9 +37,16 @@ function Faq() {
           ))}
         </div>
       </div>
-      <footer>
-      <Footer/>
-      </footer>
+
+      <div className={styles.footer}>
+      <h2 className={styles.appname}>Local music party</h2>
+        <nav className={styles.social}>
+          <Vk className={styles.footerIcon}/>
+          <Tel className={styles.footerIcon}/>
+          <Dis className={styles.footerIcon}/>
+        </nav>
+        <span className={styles.copyright}>©2024</span>
+    </div>
     </div>
   )
 }

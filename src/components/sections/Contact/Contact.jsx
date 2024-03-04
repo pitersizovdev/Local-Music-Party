@@ -57,9 +57,8 @@ const Contact = () => {
   }
   return (
     <div className={styles.section}>
-      <div className={styles.wrapper}>
         <h1>Свяжитесь с нами</h1>
-        <h3>Наши администраторы ответят вам в обратном письме</h3>
+
         <form method='POST'>
           <textarea
             className={styles.leftcolumn}
@@ -70,6 +69,9 @@ const Contact = () => {
           />
 
           <div className={styles.rightcolumn}>
+          <h3>Мы ответим вам в обратном письме</h3>
+
+          <div className={styles.rightset}>
             <input
               className={styles.rightinput}
               type="text"
@@ -100,9 +102,9 @@ const Contact = () => {
             </select>
 
             <button className={styles.rightbutton} onClick={send}>Отправить</button>
+            </div>
           </div>
         </form>
-      </div>
     </div>
   );
 }

@@ -10,8 +10,7 @@ import Download from './components/sections/Download/Download'
 
 const App = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
+    <div className={styles.bg}>
       <Home/>
       <About/>
       <ForOrg/>
@@ -19,9 +18,11 @@ const App = () => {
       <Download/>
       <Contact/>
       <Faq/>
-      </div>
     </div>
   )
 }
 
 export default App
+
+
+

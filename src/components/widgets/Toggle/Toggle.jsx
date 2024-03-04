@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { FaBars, FaXmark } from "react-icons/fa6";
-import { RiDownloadCloudFill } from "react-icons/ri";
+import { MdCloudDownload } from "react-icons/md";
 import { ReactComponent as Vk } from '../../../assets/svg/vk.svg';
 import { ReactComponent as Tel } from '../../../assets/svg/tel.svg';
 import { ReactComponent as Dis } from '../../../assets/svg/dis.svg';
@@ -17,7 +17,7 @@ const [isOpen, setOpen] = useState(false)
         <li><Vk className={styles.toggleIcon} /></li>
         <li><Tel className={styles.toggleIcon} /></li>
         <li><Dis className={styles.toggleIcon} /></li>
-        <li><RiDownloadCloudFill className={styles.toggleIcon} /></li>
+        <li><MdCloudDownload className={styles.toggleIcon} /></li>
       </ul>
     </nav>
     </div>

@@ -9,7 +9,7 @@ import Toggle from '../Toggle/Toggle';
 function Header() {
 
   return (
-    <>
+
       <div className={styles.header}>
 
         <img className={styles.lillogo3d} src={Lillogo3d} alt="Logo" />
@@ -23,7 +23,7 @@ function Header() {
         </nav>
         <div className={styles.toggle}><Toggle /></div>
       </div>
-    </>
+
   );
 }
 

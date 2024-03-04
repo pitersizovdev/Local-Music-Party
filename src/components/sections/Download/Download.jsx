@@ -2,8 +2,8 @@ import React from 'react'
 import styles from './downl.module.css'
 import MiniLogo from '../../../assets/svg/minilogo.svg'
 import Qr from '../../../assets/svg/qr.svg'
-import Android from '../../../assets/img/android.png'
-import Ios from '../../../assets/img/ios.png'
+import Android from '../../../assets/svg/android.svg'
+import Ios from '../../../assets/svg/ios.svg'
 
 function Download() {
   return (

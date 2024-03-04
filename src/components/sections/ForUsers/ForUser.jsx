@@ -17,14 +17,17 @@ function ForUser() {
         <h3 className={styles.titleStep1}>Узнайте о новых и набирающих <br/> популярность артистах</h3>
         <img className={styles.blob5img} src={Blob5} alt="blob" />
       </div>
+
       <div className={styles.blob6}>
         <h3 className={styles.titleStep2}>Сможете запланировать поход <br/> на мероприятие заранее</h3>
         <img className={styles.blob6img} src={Blob6} alt="blob" />
       </div>
+
       <div className={styles.blob7}>
         <h3 className={styles.titleStep3}>Посетите больше <br/> музыкальных <br/> мероприятиий!</h3>
         <img className={styles.blob7img} src={Blob7} alt="blob" />
       </div>
+      
     </div>
   )
 }

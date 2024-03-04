@@ -1,63 +1,45 @@
 .section {
-    height: 100vh;
-    scroll-snap-align: center;
-    position: relative;
-  }
+  font-size: 16px;
+  height: 100vh;
+  scroll-snap-align: center;
+  overflow: hidden;
+  position: relative;
+}
   
-  .minilogo, .qr, .android, .ios {
-    position: absolute;
-  }
+.minilogo, .qr, .android, .ios {
+  position: absolute;
+}
   
-  .minilogo {
-    margin: 2%;
-    height: 100px;
-    top: 0;
-    left: 0;
-  }
+.minilogo {
+  margin: 2em;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
   
-  .qr {
-    margin: 2%;
-    height: 100px;
-    top: 0;
-    right: 0;
-  }
+.qr {
+  margin: 2em;
+  height: 100px;
+  top: 0;
+  right: 0;
+}
   
-  .android {
-    height: 200px;
-    bottom: 0;
-    left: 0;
-  }
+.android {
+  height: 15em;
+  margin:  0 0 -2em 2em;
+  bottom: 0;
+  left: 0;
+}
   
-  .ios {
-    height: 200px;
-    bottom: 0;
-    right: 0;
-  }
+.ios {
+  width: 15em;
+  margin:  0 2em -2em 0;
+  bottom: 0;
+  right: 0;
+}
 
-  @media (max-width: 768px) {
-    .minilogo {
-      margin: 4%;
-      height: 100px;
-      top: 0;
-      left: 0;
-    }
-    
-    .qr {
-      margin: 4%;
-      height: 100px;
-      top: 0;
-      right: 0;
-    }
-    
-    .android {
-      height: 150px;
-      bottom: 0;
-      left: 0;
-    }
-    
-    .ios {
-      height: 150px;
-      bottom: 0;
-      right: 0;
-    }
-  }
+@media (max-width: 768px) {
+}
+
+@media (max-width: 320px) {
+}

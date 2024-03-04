@@ -20,7 +20,6 @@
 }
 
 body, textarea, input, select{
-  margin: 0;
   font-family: 'TTForsRegular', sans-serif;
   color: #fcfcfc;
 }

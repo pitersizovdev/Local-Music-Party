@@ -1,34 +1,37 @@
 .section {
+  font-size: 16px;
+  padding: 0 5em 0 5em;
   height: 100vh;
   scroll-snap-align: center;
   position: relative; 
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+
+.section h1 {
+  font-size: 8em;
 }
+
 .wrapper {
+  height: 60vh;
   display: flex;
   justify-content: center;
-  margin: 0 4%;
+  align-items: center;
 }
 .accordion{
   width: 100%;
 }
 .item{
   background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
-  margin: 0 0 32px 0;
-  padding: 10px 20px;
-  border-radius: 16px ;
+  margin: 0 0 2em 0;
+  padding: 0.5em 1em;
+  border-radius: 1em ;
 }
 .item h3 {
-  font-size: 48px;
+  font-size: 2.5em;
   text-shadow: none;
 }
 .item h4 {
-  margin: 16px 0 8px 0;
-  font-size: 32px;
+  font-size: 2em;
+  margin: 0.5em 0 0.25em 0;
 }
 .title{
   display: flex;
@@ -41,37 +44,44 @@ footer {
   overflow: hidden;
 }
 .content.show {
-  max-height: 9999px;
-}
-.faqbg{
-  margin: 0 0 4% 4%;
-  margin-top: 16px;
-  font-size: 128px;
-}
-.FaChevronDown, .FaChevronUp{
-  font-size: 32px;
-  margin: 8px 10px 0 0;
+  max-height: 100em;
 }
 
-@media (max-width: 768px) {
-  .wrapper {
-    flex-direction: column;
-  }
-  .faqbg {
-    font-size: 64px;
-  }
-  .item h3 {
-    font-size: 32px;
-    margin: 0 16px 0 0;
-  }
-  .item h4 {
-    margin: 16px 32px 8px 0;
-    font-size: 24px;
-  }
-  .FaChevronDown, .FaChevronUp{
-    font-size: 16px;
-    margin: 8px 10px 0 0;
-  }
-  
+.FaChevronDown, .FaChevronUp{
+  font-size: 2em;
+  margin: 0.25em 0.5em 0 0;
+}
+
+
+.footer {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4em;
 }
   
+.appname {
+  font-size: 2em;
+  margin-right: 2em;
+}
+
+.social {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+}
+
+.copyright {
+  position: absolute;
+  right: 0em;
+  margin-right: 6rem;
+  color: gray;
+}
+
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 320px) {
+}
+
