@@ -44,9 +44,11 @@ function Faq() {
           <Vk className={styles.footerIcon}/>
           <Tel className={styles.footerIcon}/>
           <Dis className={styles.footerIcon}/>
+          <span className={styles.copyright}>©2024</span>
         </nav>
-        <span className={styles.copyright}>©2024</span>
-    </div>
+      </div>
+
+
     </div>
   )
 }

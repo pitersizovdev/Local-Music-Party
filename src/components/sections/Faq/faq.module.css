@@ -58,6 +58,8 @@
   display: flex;
   align-items: center;
   padding-bottom: 4em;
+  position: absolute;
+  bottom: 0;
 }
   
 .appname {
@@ -72,9 +74,6 @@
 }
 
 .copyright {
-  position: absolute;
-  right: 0em;
-  margin-right: 6rem;
   color: gray;
 }
 

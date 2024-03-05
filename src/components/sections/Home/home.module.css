@@ -47,6 +47,16 @@
     width: 500px;
   }
 
+.canva{
+  width: 50em;
+  height: 50em;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  overflow: hidden;
+}
+
+
   @media (max-width: 768px) {
   }
   
