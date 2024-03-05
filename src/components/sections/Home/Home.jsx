@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import styles from './home.module.css';
 import Header from '../../widgets/Header/Header';
 import { Environment, OrbitControls } from '@react-three/drei';
-import { Logod } from '../../models/Logod';
+import Logomodel from '../../models/Logomodel';
 
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
       <Canvas>
         <Environment preset='studio'/>
         <OrbitControls/>
-        <Logod/>
+        <Logomodel/>
       </Canvas>
       </div>
 
