@@ -47,15 +47,25 @@
     width: 500px;
   }
 
-.canva{
-  width: 50em;
-  height: 50em;
-  position: absolute;
-  top: 10vh;
-  right: 0;
-  overflow: hidden;
-}
 
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0%);
+    }
+    45%, 55% {
+      transform: translateY(3%);
+    }
+  }
+  
+  .canva {
+    width: 70em;
+    height: 70em;
+    position: absolute;
+    top: -9vh;
+    right: -2vh;
+    overflow: hidden;
+    animation: moveUpDown 5s infinite linear;
+  }
 
   @media (max-width: 768px) {
   }
