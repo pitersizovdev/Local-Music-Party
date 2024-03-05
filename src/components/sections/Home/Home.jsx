@@ -1,9 +1,9 @@
 import React from 'react';
-import { Canvas } from '@react-three/fiber';
 import styles from './home.module.css';
 import Header from '../../widgets/Header/Header';
+import { Canvas } from '@react-three/fiber';
 import { Environment, OrbitControls } from '@react-three/drei';
-import Logomodel from '../../models/Logomodel';
+import { Metalmodel } from '../../models/Metalmodel';
 
 
 const Home = () => {
@@ -19,8 +19,8 @@ const Home = () => {
       <div className={styles.canva}>
       <Canvas>
         <Environment preset='studio'/>
-        <OrbitControls/>
-        <Logomodel/>
+          <OrbitControls/>
+          <Metalmodel/>
       </Canvas>
       </div>
 
