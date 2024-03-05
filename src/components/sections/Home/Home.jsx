@@ -18,7 +18,7 @@ const Home = () => {
 
       <div className={styles.canva}>
       <Canvas>
-        <Environment preset='studio'/>
+        <Environment preset='apartment'/>
           <OrbitControls/>
           <Metalmodel/>
       </Canvas>
