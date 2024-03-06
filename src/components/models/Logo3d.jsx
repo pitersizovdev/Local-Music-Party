@@ -8,7 +8,7 @@ export function Logo3d(props) {
   return (
     <group scale={0.35} {...props} dispose={null}>
 
-<mesh geometry={nodes.Ресурс_4001.geometry} material={new MeshPhysicalMaterial({ color: 'RebeccaPurple', metalness: 1, roughness: 0.09 })} position={[-0.15, 0.9, 0.5]} rotation={[Math.PI / 2 - (4 * Math.PI) / 180, (-5 * Math.PI) / 180, (25 * Math.PI) / 180]} />
+<mesh geometry={nodes.Ресурс_4001.geometry} material={new MeshPhysicalMaterial({ color: '#697adf', metalness: 1, roughness: 0.09 })} position={[-0.15, 0.9, 0.5]} rotation={[Math.PI / 2 - (4 * Math.PI) / 180, (-5 * Math.PI) / 180, (25 * Math.PI) / 180]} />
 <mesh geometry={nodes.Ресурс_5001.geometry} material={new MeshPhysicalMaterial({ color: 'RebeccaPurple', metalness: 1, roughness: 0.09 })} rotation={[Math.PI / 2 - (4 * Math.PI) / 180, (-5 * Math.PI) / 180, (25 * Math.PI) / 180]} />
 
 
