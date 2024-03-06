@@ -78,9 +78,52 @@
 }
 
 
+@media (max-width: 1440px) {
+  .section {
+    font-size: 13px;
+  }
+  .footer {
+    font-size: 16px;
+  }
+
+}
+
 @media (max-width: 768px) {
+  .section {
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 9px;
+  }
+  .footerIcon{
+    width: 3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    font-size: 8px;
+  }
+  .footer {
+    font-size: 8px;
+  }
+  .footerIcon{
+    width: 2em;
+  }
+  span{
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
+  .section {
+    font-size: 6px;
+  }
+  .footer {
+    font-size: 6px;
+  }
+  .footerIcon{
+    width: 2em;
+  }
 }
 

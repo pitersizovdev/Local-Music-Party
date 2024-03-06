@@ -12,14 +12,14 @@
   
 .minilogo {
   margin: 2em;
-  height: 100px;
+  height: 10em;
   top: 0;
   left: 0;
 }
   
 .qr {
   margin: 2em;
-  height: 100px;
+  height: 10em;
   top: 0;
   right: 0;
 }
@@ -38,8 +38,31 @@
   right: 0;
 }
 
+@media (max-width: 1440px) {
+  .section {
+    font-size: 13px;
+  }
+
+}
+
 @media (max-width: 768px) {
+  .section {
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .section {
+    font-size: 10px;
+  }
+
 }
 
 @media (max-width: 320px) {
+  .section {
+    font-size: 8px;
+  }
+
 }
+

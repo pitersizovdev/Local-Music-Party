@@ -69,7 +69,7 @@ const Contact = () => {
           />
 
           <div className={styles.rightcolumn}>
-          <h3>Мы ответим вам в обратном письме</h3>
+          <h3>Наши администраторы ответят вам в обратном письме</h3>
 
           <div className={styles.rightset}>
             <input
