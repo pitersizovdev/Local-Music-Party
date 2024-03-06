@@ -68,12 +68,12 @@
   }
 
   .downl {
-    margin-top: 10em;
+    margin-top: 4em;
     padding: 0 1em;
     background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
     color: #fcfcfc;
     font-family: 'TTForsMedium', sans-serif;
-    font-size: 2em;
+    font-size: 5em;
     border: none;
     border-radius: 2em;
     display:none;
@@ -86,10 +86,13 @@
     .canva {
       display: none;
     }
-    .title2{
-      width: 300px;
-    }
     .downl {
       display:block;
   }
+  .title2{
+    font-weight: 500;
+    font-size: 5em;
+    width: 300px;
+  }
+
   }

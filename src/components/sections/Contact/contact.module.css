@@ -122,6 +122,7 @@ footer {
     .section {
         font-size: 7px;
     }
+
     form{
         flex-direction: column;
         height: 80em;

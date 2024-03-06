@@ -98,16 +98,43 @@
 
 @media (max-width: 480px) {
   .section {
-      font-size: 5px;
+    font-size: 4px;
   }
-
   .section h1 {
-      font-size: 4em;
-
+    margin-top: 0.4em;
   }
-      .blob5img, .blob6img, .blob7img{
-        width: 50%;
-      }
+  .blob5img, .blob6img, .blob7img{
+    width: 50%;
+  }
+  .blob5 {
+    top: 11%;
+    right: -20%;
+  }
+  .blob5 h3 {
+    font-size: 3em;
+    }
+    
+  .blob6 {
+    top: 22%;
+    right: 5%;  
+    font-size: 1.1em;
+    width: 120%;
+  }
+  .blob6 h3 {
+    font-size: 3em;
+    }
+  
+    .blob7 {
+    top: 35%;
+    right: -10%;
+    }
+    .blob7 h3 {
+    font-size: 4em;
+  }
+  .mockupMap {
+    transform: scale(0.5);
+    margin-top:40em;
+  }
     
 }
 

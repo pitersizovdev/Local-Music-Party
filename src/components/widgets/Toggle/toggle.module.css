@@ -30,7 +30,7 @@ ul li{
     justify-content: center;
     right: 0vh;
     width: 4em;
-    margin: 1em 5em 0 0;
+    margin: 1em 2em 0 0;
     padding: 1em 0.5em 0.5em 0.5em;
     background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
     border-radius: 16px;
@@ -43,4 +43,3 @@ ul li{
     opacity: 1;
     visibility: visible;
 }
-
