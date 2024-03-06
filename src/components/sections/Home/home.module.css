@@ -67,10 +67,29 @@
     animation: moveUpDown 5s infinite linear;
   }
 
-  @media (max-width: 768px) {
-  }
-  
-  @media (max-width: 320px) {
-  }
+  .downl {
+    margin-top: 10em;
+    padding: 0 1em;
+    background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
+    color: #fcfcfc;
+    font-family: 'TTForsMedium', sans-serif;
+    font-size: 2em;
+    border: none;
+    border-radius: 2em;
+    display:none;
+}
 
-
+  @media (max-width: 480px) {
+    .section {
+      font-size: 6px;
+    }
+    .canva {
+      display: none;
+    }
+    .title2{
+      width: 300px;
+    }
+    .downl {
+      display:block;
+  }
+  }

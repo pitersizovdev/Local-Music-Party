@@ -14,6 +14,7 @@ const Home = () => {
       <div className={styles.presentation}>
         <h1 className={styles.title}>Исследуй <br/>музыку!</h1>
         <h3 className={styles.title2}>Мобильное приложение для поиска локальных мероприятий</h3>
+        <button className={styles.downl}>Скачать</button>
       <div/>
 
       <div className={styles.canva}>
