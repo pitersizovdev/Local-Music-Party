@@ -24,6 +24,7 @@
   margin: 0 0 2em 0;
   padding: 0.5em 1em;
   border-radius: 1em ;
+  width: 100%;
 }
 .item h3 {
   font-size: 2.5em;
@@ -42,10 +43,14 @@
 .content {
   max-height: 0;
   overflow: hidden;
+  padding: 0.5em 1em;
+  transition: max-height 0.3s ;
 }
+
 .content.show {
   max-height: 100em;
 }
+
 
 .FaChevronDown, .FaChevronUp{
   font-size: 2em;

@@ -96,3 +96,40 @@
   }
 
   }
+
+
+  @media (max-width: 320px) {
+    .section {
+      font-size: 6px;
+    }
+    .canva {
+      display: none;
+    }
+    .downl {
+      display:block;
+  }
+  .title2{
+    font-weight: 500;
+    font-size: 5em;
+    width: 300px;
+  }
+
+  }
+
+  @media (max-width: 1500px) {
+    .section {
+      font-size: 6px;
+    }
+    .canva {
+      display: none;
+    }
+    .downl {
+      display:block;
+  }
+  .title2{
+    font-weight: 500;
+    font-size: 5em;
+    width: 300px;
+  }
+
+  }

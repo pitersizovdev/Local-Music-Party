@@ -32,7 +32,7 @@ function Faq() {
                 <h3>{item.q}</h3>
                 <span>{selected ===i?<FaChevronDown className={styles.FaChevronDown} />:<FaChevronUp className={styles.FaChevronDown}/>}</span>
                 </div>
-                <div className={selected === i ? `${styles.content.show}` : styles.content}><h4>{item.a}</h4></div>
+                <div className={selected === i ? `${styles.content} ${styles.show}` : styles.content}><h4>{item.a}</h4></div>
             </div>
           ))}
         </div>

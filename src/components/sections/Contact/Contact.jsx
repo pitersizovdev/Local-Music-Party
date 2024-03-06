@@ -1,7 +1,14 @@
 import React, { useState } from 'react'
 import styles from './contact.module.css'
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
   const [feedBack, setFeedBack] = useState({
     Name:'',
