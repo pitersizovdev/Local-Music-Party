@@ -47,24 +47,29 @@
     width: 500px;
   }
 
-
-  @keyframes moveUpDown {
-    0%, 100% {
-      transform: translateY(0%);
-    }
-    45%, 55% {
-      transform: translateY(3%);
-    }
-  }
   
   .canva {
     width: 70em;
     height: 70em;
     position: absolute;
-    top: -9vh;
-    right: -2vh;
-    overflow: hidden;
-    animation: moveUpDown 5s infinite linear;
+    top: -6vh;
+    right: 0vh;
+    z-index: 0;
+    animation: levitate 2.5s infinite alternate ease-in-out; /* Define the levitation animation */
+  }
+  
+  @keyframes levitate {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-30px); /* Adjust the distance for levitation effect */
+    }
+  }
+  .header {
+    position: relative;
+    z-index: 2; 
+
   }
 
   .downl {
@@ -77,6 +82,7 @@
     border: none;
     border-radius: 2em;
     display:none;
+    cursor: pointer;
 }
 
   @media (max-width: 480px) {

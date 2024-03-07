@@ -9,8 +9,9 @@ import { Logo3d } from '../../models/Logo3d';
 const Home = () => {
   return (
     <div className={styles.section}>
-      <Header />
-      
+     <div className={styles.header}>
+      <Header/>
+      </div>
       <div className={styles.presentation}>
         <h1 className={styles.title}>Исследуй <br/>музыку!</h1>
         <h3 className={styles.title2}>Мобильное приложение для поиска локальных мероприятий</h3>
