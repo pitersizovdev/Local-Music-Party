@@ -20,12 +20,15 @@
 .mockupMap {
   transform: scale(0.9);
   position: relative;
-  z-index: 1;
-}
-
-.leaflet-container{
-  height: 889px;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
   width: 442px;
+  height: 889px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .blob1, .blob2, .blob3 {
@@ -33,6 +36,7 @@
   align-items: center;
   position: relative;
   width: auto;
+  z-index: -1;
 }
 .blob1img, .blob2img, .blob3img{
   width: 100%;

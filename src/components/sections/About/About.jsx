@@ -1,12 +1,18 @@
 import React from 'react';
 import styles from './about.module.css';
 import MockupMap from '../../../assets/mockups/mockup.png';
+import MockupMapLayer from '../../../assets/mockups/mockuplayer.png';
+
+import MarkerSvg from '../../../assets/svg/marker.svg';
+
 import Blob1 from '../../../assets/img/blob1.png';
 import Blob2 from '../../../assets/img/blob2.png';
 import Blob3 from '../../../assets/img/blob3.png';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import { MapContainer, TileLayer, Marker} from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 
 function About() {
   const { ref, inView } = useInView({
@@ -14,20 +20,18 @@ function About() {
     threshold: 0.2,
   });
 
-  const markers = [
-    {
-      geocode: [59.9343, 30.3351],
-      popUp: "Hello, I am pop up 1"
-    },
-    {
-      geocode: [59.9343, 30.3351],
-      popUp: "Hello, I am pop up 2"
-    },
-    {
-      geocode: [59.9343, 30.3351],
-      popUp: "Hello, I am pop up 3"
-    }
-  ];
+  const customMarkerIcon = new L.Icon({
+    iconUrl: MarkerSvg,
+    iconSize: [47, 54], // размер иконки
+  });
+  
+  const CustomMarker = ({ position }) => (
+    <Marker position={position} icon={customMarkerIcon}>
+      <Popup>
+      Новое мероприятие! &#129705;
+      </Popup>
+    </Marker>
+  );
 
   return (
     <motion.div
@@ -47,29 +51,35 @@ function About() {
 
 
       <motion.div
-  className={styles.mockupMap}
-  style={{
-    backgroundImage: `url(${MockupMap})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    width: '442px',
-    height: '889px',
-    position: 'relative',
-    overflow: 'hidden',
-  }}
-  initial={{ y: "100vh" }}
-  animate={inView ? { y: 0 } : { y: "100vh" }}
-  transition={{ duration: 1 }}
+     className={styles.mockupMap}
+     style={{
+       backgroundImage: `url(${MockupMap})`,
+       position: 'relative',
+       transform: 'scale(0.9)',
+     }}
+     initial={{ y: "100vh" }}
+     animate={inView ? { y: 0 } : { y: "100vh" }}
+     transition={{ duration: 1 }}
+   >
+<MapContainer
+  center={[59.9343, 30.3351]}
+  zoom={13}
+  style={{ height: '740px', width: '390px', marginTop: '21px', borderTopLeftRadius: '54px', borderTopRightRadius: '54px', position: 'relative', zIndex: 0 }}
+  zoomControl={false}
 >
-<div>
-  <MapContainer center={[59.9343, 30.3351]} zoom={13} style={{ height: '700px', width: '350px' }}>
-    <TileLayer
-      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    />
-  </MapContainer>
-</div>
-</motion.div>
+  <TileLayer
+    attribution='<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    url="https://tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token=0KBMnt76aP50bicBYlYcSS6XFk3jgHCPkNGFR1er7976nLql0toXesIwopN7NPLF"
+  />
+
+  {[...Array(20).keys()].map((index) => (
+    <CustomMarker key={index} position={[59.9343 + (Math.random() - 0.5) * 0.1, 30.3351 + (Math.random() - 0.5) * 0.1]} />
+  ))}
+</MapContainer>
+
+     {/* Mockup Map Layer */}
+     <img src={MockupMapLayer} alt="Mockup Layer" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} />
+   </motion.div>
 
       <div className={styles.blob1}>
         <motion.h3
