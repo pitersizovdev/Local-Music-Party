@@ -49,7 +49,7 @@ function About() {
         <motion.h3
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 1, delay: 1.4 }}
+          transition={{ duration: 1, delay: 1.2 }}
         >
           Афиша – подборки крупных событий и выступлений локальных артистов!
         </motion.h3>
