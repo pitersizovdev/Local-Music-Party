@@ -2,9 +2,7 @@ import React from 'react';
 import styles from './about.module.css';
 import MockupMap from '../../../assets/mockups/mockup.png';
 import MockupMapLayer from '../../../assets/mockups/mockuplayer.png';
-
 import MarkerSvg from '../../../assets/svg/marker.svg';
-
 import Blob1 from '../../../assets/img/blob1.png';
 import Blob2 from '../../../assets/img/blob2.png';
 import Blob3 from '../../../assets/img/blob3.png';
@@ -64,7 +62,7 @@ function About() {
 <MapContainer
   center={[59.9343, 30.3351]}
   zoom={13}
-  style={{ height: '740px', width: '390px', marginTop: '21px', borderTopLeftRadius: '54px', borderTopRightRadius: '54px', position: 'relative', zIndex: 0 }}
+  style={{ height: '770px', width: '390px', marginTop: '21px', borderTopLeftRadius: '54px', borderTopRightRadius: '54px', position: 'relative', zIndex: 0 }}
   zoomControl={false}
 >
   <TileLayer
