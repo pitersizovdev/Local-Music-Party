@@ -5,7 +5,6 @@ import L from 'leaflet';
 import styles from './mapmockup.module.css';
 import MockupMapLayer from '../../../assets/mockups/mockuplayer.png';
 import MarkerSvg from '../../../assets/svg/marker.svg';
-import { useInView } from 'react-intersection-observer';
 
 const customMarkerIcon = new L.Icon({
   iconUrl: MarkerSvg,
@@ -21,7 +20,6 @@ const CustomMarker = ({ position }) => (
 );
 
 const MapMockup = () => {
-  const { ref, inView } = useInView({ threshold: 0.5 });
 
   return (
     <>
