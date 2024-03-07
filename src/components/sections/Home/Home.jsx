@@ -3,11 +3,7 @@ import styles from './home.module.css';
 import Header from '../../widgets/Header/Header';
 import { Canvas } from '@react-three/fiber';
 import { Environment, OrbitControls } from '@react-three/drei';
-import { Logo3d } from '../../models/Logo3d';
-import { motion } from 'framer-motion';
-import SkeletonLoadingScreen from '../../features/SkeletonLoadingScreen/SkeletonLoadingScreen';
-   
-
+import Logo3dlowpoly from '../../models/Logo3dlowpoly';
 
 const Home = () => {
 
@@ -28,7 +24,7 @@ const Home = () => {
         <Suspense fallback={false}>
         <Environment preset='night' />
           <OrbitControls enableZoom={false}/>
-          <Logo3d/>
+          <Logo3dlowpoly/>
           </Suspense>
       </Canvas>
       </div>

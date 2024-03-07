@@ -44,11 +44,12 @@
   max-height: 0;
   overflow: hidden;
   padding: 0.5em 1em;
-  transition: max-height 0.3s ;
+  transition: max-height 0.5s ease;
 }
 
 .content.show {
   max-height: 100em;
+  transition: max-height 3s ease-out;
 }
 
 
