@@ -39,9 +39,9 @@ function ForUser() {
             className={styles.mockupMap}
             src={MockupMap}
             alt="mockup"
-        initial={{ y: "100vh" }}
-        animate={inView ? { y: 0 } : { y: "100vh" }}
-        transition={{ duration: 1 }}
+            initial={{ y: "100vh" }}
+            animate={inView ? { y: 0 } : { y: "100vh" }}
+            transition={{ duration: 1 }}
           />
         )}
       </motion.div>
@@ -50,7 +50,7 @@ function ForUser() {
         className={styles.blob5}
         initial={{ opacity: 0, y: "100vh" }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
-        transition={{ duration: 1, delay: 1.5 }}
+        transition={{ duration: 1, delay: 1 }}
       >
         <motion.h3
           className={styles.titleStep1}
@@ -67,7 +67,7 @@ function ForUser() {
             alt="blob"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.75 }}
+            transition={{ duration: 1, delay: 1 }}
           />
         )}
       </motion.div>
@@ -76,7 +76,7 @@ function ForUser() {
         className={styles.blob6}
         initial={{ opacity: 0, y: "100vh" }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
-        transition={{ duration: 1, delay: 1.75 }}
+        transition={{ duration: 1, delay: 1.4 }}
       >
         <motion.h3
           className={styles.titleStep2}
@@ -100,7 +100,7 @@ function ForUser() {
         className={styles.blob7}
         initial={{ opacity: 0, y: "100vh" }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
-        transition={{ duration: 1, delay: 2 }}
+        transition={{ duration: 1, delay: 1.7 }}
       >
         <motion.h3
           className={styles.titleStep3}

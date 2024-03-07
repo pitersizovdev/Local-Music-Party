@@ -44,7 +44,7 @@ function ForOrg() {
         className={styles.blob4}
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 1.5 }}
+        transition={{ duration: 1, delay: 1 }}
       >
         <motion.h3
           className={styles.titleStep1}
@@ -66,7 +66,7 @@ function ForOrg() {
           className={styles.titleStep3}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
+          transition={{ duration: 1, delay: 1.75 }}
         >
           Получи 10% баллами от <br/>ресторанов-партнеров
         </motion.h3>

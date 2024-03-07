@@ -24,6 +24,8 @@
   position: relative;
   width: auto;
 }
+
+
 .blob5img, .blob6img, .blob7img{
   width: 100%;
 }
@@ -44,7 +46,7 @@
 .blob6 {
   position: absolute;
   top: 45%;
-  right: 33%;  
+  right: 33%; 
 }
 .blob6 h3 {
   text-align: center;
@@ -58,6 +60,7 @@
   position: absolute;
   top: 65%;
   right: 5%;
+
   }
   .blob7 h3 {
   text-align: center;
