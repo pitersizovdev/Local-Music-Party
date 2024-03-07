@@ -5,10 +5,13 @@ import { Canvas } from '@react-three/fiber';
 import { Environment, OrbitControls } from '@react-three/drei';
 import { Logo3d } from '../../models/Logo3d';
 import { motion } from 'framer-motion';
+import SkeletonLoadingScreen from '../../features/SkeletonLoadingScreen/SkeletonLoadingScreen';
    
 
 
 const Home = () => {
+
+
   return (
     <div className={styles.section}>
      <div className={styles.header}>

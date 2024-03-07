@@ -1,11 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-
 import styles from './mapmockup.module.css';
-import MockupMap from '../../../assets/mockups/mockup.png';
 import MockupMapLayer from '../../../assets/mockups/mockuplayer.png';
 import MarkerSvg from '../../../assets/svg/marker.svg';
 import { useInView } from 'react-intersection-observer';
