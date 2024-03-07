@@ -6,12 +6,28 @@ import Blob2 from '../../../assets/img/blob2.png';
 import Blob3 from '../../../assets/img/blob3.png';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import { MapContainer, TileLayer, Marker} from 'react-leaflet';
 
 function About() {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
+
+  const markers = [
+    {
+      geocode: [59.9343, 30.3351],
+      popUp: "Hello, I am pop up 1"
+    },
+    {
+      geocode: [59.9343, 30.3351],
+      popUp: "Hello, I am pop up 2"
+    },
+    {
+      geocode: [59.9343, 30.3351],
+      popUp: "Hello, I am pop up 3"
+    }
+  ];
 
   return (
     <motion.div
@@ -28,14 +44,32 @@ function About() {
       >
         Что внутри?
       </motion.h1>
-      <motion.img
-        className={styles.mockupMap}
-        src={MockupMap}
-        alt="Logo"
-        initial={{ y: "100vh" }}
-        animate={inView ? { y: 0 } : { y: "100vh" }}
-        transition={{ duration: 1 }}
-      />
+
+
+      <motion.div
+  className={styles.mockupMap}
+  style={{
+    backgroundImage: `url(${MockupMap})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '442px',
+    height: '889px',
+    position: 'relative',
+    overflow: 'hidden',
+  }}
+  initial={{ y: "100vh" }}
+  animate={inView ? { y: 0 } : { y: "100vh" }}
+  transition={{ duration: 1 }}
+>
+<div>
+  <MapContainer center={[59.9343, 30.3351]} zoom={13} style={{ height: '700px', width: '350px' }}>
+    <TileLayer
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+  </MapContainer>
+</div>
+</motion.div>
 
       <div className={styles.blob1}>
         <motion.h3

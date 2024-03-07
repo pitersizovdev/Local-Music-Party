@@ -11,7 +11,7 @@ import Download from './components/sections/Download/Download'
 const App = () => {
   return (
     <div className={styles.bg}>
-      <Home/>
+      {/*<Home/>*/}
       <About/>
       <ForOrg/>
       <ForUser/>

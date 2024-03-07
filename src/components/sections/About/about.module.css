@@ -23,6 +23,11 @@
   z-index: 1;
 }
 
+.leaflet-container{
+  height: 889px;
+  width: 442px;
+}
+
 .blob1, .blob2, .blob3 {
   display: flex;
   align-items: center;
