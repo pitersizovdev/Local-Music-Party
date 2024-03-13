@@ -25,17 +25,23 @@
 }
   
 .android {
+  cursor: pointer;
+  bottom: -2em;
+  left: 2em;
+  background-image: url('../../../assets/svg/android.svg');
+  background-size: cover;
+  width: 15em;
   height: 15em;
-  margin:  0 0 -2em 2em;
-  bottom: 0;
-  left: 0;
 }
   
 .ios {
+  cursor: pointer;
+  bottom: -2em;
+  right: 2em;
+  background-image: url('../../../assets/svg/ios.svg');
+  background-size: cover;
   width: 15em;
-  margin:  0 2em -2em 0;
-  bottom: 0;
-  right: 0;
+  height: 15em;
 }
 
 @media (max-width: 1440px) {

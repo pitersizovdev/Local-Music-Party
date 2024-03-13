@@ -41,9 +41,9 @@ function Faq() {
       <div className={styles.footer}>
       <h2 className={styles.appname}>Local music party</h2>
         <nav className={styles.social}>
-          <Vk className={styles.footerIcon}/>
-          <Tel className={styles.footerIcon}/>
-          <Dis className={styles.footerIcon}/>
+          <a href="https://vk.com"><Vk /></a>
+          <a href="https://web.telegram.org/k/"><Tel /></a>
+          <a href="https://discord.com/"><Dis /></a>
           <span className={styles.copyright}>©2024</span>
         </nav>
       </div>

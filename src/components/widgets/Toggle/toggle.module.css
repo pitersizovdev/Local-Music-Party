@@ -24,6 +24,11 @@ ul li{
     height: 1em;
 }
 
+ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .toggleSocial {
     display: flex;
     position: absolute;
