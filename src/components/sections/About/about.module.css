@@ -18,14 +18,12 @@
 }
 
 .mockupMap {
-  transform: scale(0.9);
-  position: relative;
+  transform: scale(0.5);
   z-index: 0;
   background-size: cover;
   background-position: center;
   width: 442px;
   height: 889px;
-  position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -95,7 +93,18 @@
     z-index: 1;
     top:19.5%;
     left: -25%;
-  }
+    background-size: 250px;
+    background-repeat: no-repeat;
+    }
+    .map{
+      display: flex;
+      justify-content: center;
+      transform: scale(0.57);
+      margin-left: 35px;
+    }
+    .layer{
+      transform: scale(0.57);
+    }
   
   .blob1, .blob2, .blob3 {
     display: flex;
@@ -109,7 +118,7 @@
   }
   .blob1 {
     position: absolute;
-    top: 10%;
+    top: 9%;
     right: -55em;
   }
   .blob1 h3 {
@@ -120,7 +129,7 @@
   
   .blob2 {
     position: absolute;
-    top: 25.5%;
+    top: 24%;
     left: -55em;
     transform: scale(1.5);
   }
@@ -133,7 +142,7 @@
   
   .blob3 {
     position: absolute;
-    top: 38%;
+    top: 36%;
     right: -57em;
   }
   .blob3 h3 {

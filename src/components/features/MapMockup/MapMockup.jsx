@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import styles from './mapmockup.module.css';
-import MockupMapLayer from '../../../assets/mockups/mockuplayer.png';
 import MarkerSvg from '../../../assets/svg/marker.svg';
 
 const customMarkerIcon = new L.Icon({
@@ -22,7 +21,7 @@ const CustomMarker = ({ position }) => (
 const MapMockup = () => {
 
   return (
-    <>
+    <div className={styles.layer}>
       <MapContainer
         center={[59.9343, 30.3351]}
         zoom={13}
@@ -38,9 +37,7 @@ const MapMockup = () => {
           <CustomMarker key={index} position={[59.9343 + (Math.random() - 0.5) * 0.1, 30.3351 + (Math.random() - 0.5) * 0.1]} />
         ))}
       </MapContainer>
-
-      <img src={MockupMapLayer} alt="Mockup Layer" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} />
-      </>
+      </div>
   );
 }
 

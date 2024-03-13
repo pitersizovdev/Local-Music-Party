@@ -7,6 +7,7 @@ import Blob3 from '../../../assets/img/blob3.png';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import MapMockup from '../../features/MapMockup/MapMockup';
+import MockupMapLayer from '../../../assets/mockups/mockuplayer.png';
 
 function About() {
   const { ref, inView } = useInView({
@@ -42,7 +43,11 @@ function About() {
      animate={inView ? { y: 0 } : { y: "100vh" }}
      transition={{ duration: 1 }}
    >
-    <MapMockup/>
+    <img className={styles.layer} src={MockupMapLayer} alt="Mockup Layer" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} />
+    <div className={styles.map}>
+    <MapMockup />
+    </div>
+
    </motion.div>
 
       <div className={styles.blob1}>

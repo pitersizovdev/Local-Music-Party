@@ -53,9 +53,10 @@
 
 @media (max-width: 480px) {
   .mockupMap {
-    transform: scale(0.5);
+    width: 250px;
     z-index: 2;
-    top: 26%;
+    bottom:-5%;
+    right: 10%;
   }
   .section {
     font-size: 4px;
@@ -67,7 +68,7 @@
     width: 120vw;
   }
   .blob4{
-    top:5.5%;
+    top:2%;
     left:-10%;
   }
   .blob4 h3{

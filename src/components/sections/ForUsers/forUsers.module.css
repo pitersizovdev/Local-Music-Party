@@ -15,7 +15,6 @@
   transform: scale(0.9);
   position: absolute;
   bottom: -5.5em;
-  position: absolute;
   z-index: 1;
 }
 
@@ -62,7 +61,6 @@
   position: absolute;
   top: 65%;
   right: 5%;
-
   }
   .blob7 h3 {
   text-align: center;
@@ -73,84 +71,35 @@
 }
 
 
-
-
-
-@media (max-width: 1440px) {
-  .section {
-      font-size: 11px;
-  }
-
-  .blob5img, .blob6img, .blob7img{
-    width: 70%;
-  }
-  .mockupMap {
-    transform: scale(0.5);
-  }
-}
-
-@media (max-width: 1024px) {
-  .section {
-      font-size: 7px;
-  }
-
-  .blob5img, .blob6img, .blob7img{
-    width: 50%;
-  }
-
-}
-
-
-@media (max-width: 480px) {
+@media (max-width: 480px){
   .section {
     font-size: 4px;
   }
-  .section h1 {
-    margin-top: 0.4em;
-  }
-  .blob5img, .blob6img, .blob7img{
-    width: 50%;
-  }
   .blob5 {
-    top: 11%;
-    right: -20%;
-  }
+    top: 8%;
+    width: 300px;
+    }
   .blob5 h3 {
-    font-size: 3em;
+    font-size: 4em;
     }
-    
-  .blob6 {
-    top: 22%;
-    right: 5%;  
-    font-size: 1.1em;
-    width: 120%;
-  }
+    .blob6 {
+      top: 21%;
+      }
   .blob6 h3 {
-    font-size: 3em;
+    font-size: 4em;
     }
-  
     .blob7 {
-    top: 35%;
-    right: -10%;
-    }
-    .blob7 h3 {
+      top: 33%;
+      width: 200px;
+      }
+  .blob7 h3 {
     font-size: 4em;
   }
+
   .mockupMap {
-    transform: scale(0.5);
-    margin-top:40em;
+    width: 250px;
+    bottom: -10em;
+    left: 10%;
   }
-    
+  
 }
-
-@media (max-width: 320px) {
-  .section {
-      font-size: 5px;
-  }
-
-  .section h1 {
-      font-size: 6em;
-    }
-
-}
-

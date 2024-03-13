@@ -31,6 +31,7 @@ function ForOrg() {
       >
         Организаторам
       </motion.h1>
+
       <motion.img
         className={styles.mockupMap}
         src={MockupMap}
@@ -39,7 +40,6 @@ function ForOrg() {
         animate={inView ? { y: 0 } : { y: "100vh" }}
         transition={{ duration: 1 }}
       />
-
       <motion.div
         className={styles.blob4}
         initial={{ opacity: 0 }}

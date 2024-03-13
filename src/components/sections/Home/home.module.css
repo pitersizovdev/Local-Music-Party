@@ -57,6 +57,10 @@
     z-index: 0;
     animation: levitate 2.5s infinite alternate ease-in-out; /* Define the levitation animation */
   }
+  .downl a{
+    text-decoration: none;
+    color: inherit;
+}
   
   @keyframes levitate {
     0% {
@@ -100,42 +104,4 @@
     font-size: 5em;
     width: 300px;
   }
-
-  }
-
-
-  @media (max-width: 320px) {
-    .section {
-      font-size: 6px;
-    }
-    .canva {
-      display: none;
-    }
-    .downl {
-      display:block;
-  }
-  .title2{
-    font-weight: 500;
-    font-size: 5em;
-    width: 300px;
-  }
-
-  }
-
-  @media (max-width: 1500px) {
-    .section {
-      font-size: 6px;
-    }
-    .canva {
-      display: none;
-    }
-    .downl {
-      display:block;
-  }
-  .title2{
-    font-weight: 500;
-    font-size: 5em;
-    width: 300px;
-  }
-
-  }
+}
