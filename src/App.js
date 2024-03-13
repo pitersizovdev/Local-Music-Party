@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <>
-      {/*<AnimatePresence exitBeforeEnter={false} mode='wait'>
+      <AnimatePresence exitBeforeEnter={false} mode='wait'>
         {showSkeleton && (
           <motion.div
             initial={{ opacity: 1 }}
@@ -33,8 +33,8 @@ const App = () => {
             <SkeletonLoadingScreen />
           </motion.div>
         )}
-      </AnimatePresence>*/}
-      <SkeletonLoadingScreen />
+      </AnimatePresence>
+
       <div className={styles.bg} style={{ opacity: showSkeleton ? 0 : 1 }}>
         <Home />
         <About />

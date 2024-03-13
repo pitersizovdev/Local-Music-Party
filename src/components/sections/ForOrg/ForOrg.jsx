@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './forOrg.module.css';
 import Logobg from '../../../assets/img/logobg.png';
-import MockupMap from '../../../assets/mockups/mockup.png';
+import MockupMap from '../../../assets/mockups/mockup2.png';
 import Blob4 from '../../../assets/img/blob4.png';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';

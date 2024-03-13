@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import styles from './forUsers.module.css';
-import MockupMap from '../../../assets/mockups/mockup.png';
+import MockupMap from '../../../assets/mockups/mockup3.png';
 import Blob5 from '../../../assets/img/blob5.png';
 import Blob6 from '../../../assets/img/blob6.png';
 import Blob7 from '../../../assets/img/blob7.png';
