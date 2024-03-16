@@ -27,7 +27,7 @@ function Download() {
   <Canvas>
     <Suspense fallback={null}>
       <Environment preset="night" />
-      <OrbitControls enableZoom={false} />
+      <OrbitControls enableZoom={false} enableRotate={false} />
       <Scene/>
     </Suspense>
   </Canvas>
