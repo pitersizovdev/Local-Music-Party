@@ -26,7 +26,7 @@ function Download() {
 <div className={styles.scene}>
   <Canvas>
     <Suspense fallback={null}>
-      <Environment preset="night" />
+      <Environment preset='night' />
       <OrbitControls enableZoom={false} enableRotate={false} />
       <Scene/>
     </Suspense>

@@ -36,9 +36,9 @@ export default function Scene(props) {
   return (
     <>
     <group ref={groupRef} scale={0.35} {...props} dispose={null}>
-      <mesh geometry={nodes.Cube.geometry} material={new THREE.MeshStandardMaterial({ color: 'RebeccaPurple', metalness: 1, roughness: 0.5  })} position={[0, -0.051, 0]} />
+      <mesh geometry={nodes.Cube.geometry} material={new THREE.MeshStandardMaterial({ color: 'RebeccaPurple' })} position={[0, -0.051, 0]} />
 
-      <mesh geometry={nodes.Cube002.geometry} material={new THREE.MeshStandardMaterial({ color: 'RebeccaPurple', metalness: 1, roughness: 0.5  })} />
+      <mesh geometry={nodes.Cube002.geometry} material={new THREE.MeshStandardMaterial({ color: 'RebeccaPurple'})} />
       <mesh geometry={nodes.Cube004.geometry} material={new THREE.MeshStandardMaterial({ color: 'Snow',})} />
       <mesh geometry={nodes.Cylinder002.geometry} material={new THREE.MeshStandardMaterial({ color: 'Snow',})} />
 
@@ -51,7 +51,7 @@ export default function Scene(props) {
       <mesh geometry={nodes.SimpleCharacter006.geometry} material={new THREE.MeshStandardMaterial({ color: 'MediumTurquoise', metalness: 1, roughness: 0.5 })} />
       
       <mesh geometry={nodes.Cylinder003.geometry} material={new THREE.MeshStandardMaterial({ color: 'Snow', metalness: 1, roughness: 0.5 })} />
-      <mesh geometry={nodes.Cube003.geometry} material={new THREE.MeshStandardMaterial({color: 'RebeccaPurple', metalness: 1, roughness: 0.5 })} />
+      <mesh geometry={nodes.Cube003.geometry} material={new THREE.MeshStandardMaterial({color: 'RebeccaPurple'})} />
       
       <mesh geometry={nodes.НЕОН.geometry} material={new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 'Magenta', emissiveIntensity: 1  })} />
 
