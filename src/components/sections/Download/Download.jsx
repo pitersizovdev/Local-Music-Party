@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import styles from './downl.module.css';
 import MiniLogo from '../../../assets/svg/minilogo.svg';
 import Qr from '../../../assets/svg/qr.svg';
-import Android from '../../../assets/svg/android.svg';
-import Ios from '../../../assets/svg/ios.svg';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import Scene from '../../models/Scene';
+import { Canvas } from '@react-three/fiber';
+import { Environment, OrbitControls } from '@react-three/drei';
 
 function Download() {
   const { ref, inView } = useInView({
@@ -21,6 +22,17 @@ function Download() {
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
     >
+
+<div className={styles.scene}>
+  <Canvas>
+    <Suspense fallback={null}>
+      <Environment preset="night" />
+      <OrbitControls enableZoom={false} />
+      <Scene/>
+    </Suspense>
+  </Canvas>
+</div>
+
       <motion.img
         className={styles.minilogo}
         src={MiniLogo}
