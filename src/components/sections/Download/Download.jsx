@@ -2,11 +2,10 @@ import React, { Suspense } from 'react';
 import styles from './downl.module.css';
 import MiniLogo from '../../../assets/svg/minilogo.svg';
 import Qr from '../../../assets/svg/qr.svg';
+import Scene from '../../../assets/video/scene.webm'
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import Scene from '../../models/Scene';
-import { Canvas } from '@react-three/fiber';
-import { Environment, OrbitControls } from '@react-three/drei';
+
 
 function Download() {
   const { ref, inView } = useInView({
@@ -23,14 +22,11 @@ function Download() {
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
     >
 
+
 <div className={styles.scene}>
-  <Canvas>
-    <Suspense fallback={null}>
-      <Environment preset='night' />
-      <OrbitControls enableZoom={false} enableRotate={false} />
-      <Scene/>
-    </Suspense>
-  </Canvas>
+  <video className={styles.video} autoPlay loop muted playsInline>
+    <source src={Scene} type='video/webm'/>
+  </video>
 </div>
 
       <motion.img
