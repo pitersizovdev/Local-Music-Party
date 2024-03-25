@@ -67,17 +67,26 @@
   .section {
     font-size: 10px;
   }
+  .video{
+    transform: scale(0.5);
+  }
 }
 
 @media (max-width: 480px) {
   .section {
     font-size: 10px;
   }
+  .video{
+    transform: scale(0.4);
+  }
 }
 
 @media (max-width: 320px) {
   .section {
     font-size: 8px;
+  }
+  .video{
+    transform: scale(0.4);
   }
 }
 

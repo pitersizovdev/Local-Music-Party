@@ -37,9 +37,9 @@ const Toggle = () => {
       <nav className={isOpen ? `${styles.toggleSocial} ${styles.active}` : styles.toggleSocial}>
         <ul>
           <li><a href="https://vk.com"><Vk className={styles.toggleIcon} /></a></li>
-          <li><a href="https://web.telegram.org/k/"><Tel /></a></li>
-          <li><a href="https://discord.com/"><Dis /></a></li>
-          <li><a href="#download"><MdCloudDownload className={styles.toggleIcon} /></a></li>
+          <li><a href="https://web.telegram.org/k/"><Tel className={styles.toggleIcon}/></a></li>
+          <li><a href="https://discord.com/">< Dis className={styles.toggleIcon}/></a></li>
+          {/*<li><a href="#download"><MdCloudDownload className={styles.toggleIcon} /></a></li>*/}
         </ul>
       </nav>
     </div>
