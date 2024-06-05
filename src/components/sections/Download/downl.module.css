@@ -63,7 +63,7 @@
   transform: translate(-50%, -50%);
 }
 .video {
-  width: 100%;
+  width: 120%;
   height: auto;
 }
 
@@ -78,7 +78,8 @@
     font-size: 10px;
   }
   .video {
-    transform: scale(0.5);
+    width: 200%;
+    height: auto;
   }
 }
 
@@ -86,16 +87,10 @@
   .section {
     font-size: 10px;
   }
-  .video {
-    transform: scale(0.4);
-  }
 }
 
 @media (max-width: 320px) {
   .section {
     font-size: 8px;
-  }
-  .video {
-    transform: scale(0.4);
   }
 }

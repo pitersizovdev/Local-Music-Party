@@ -18,6 +18,9 @@
   src: url('../src/assets/fonts/TTForsBold.ttf') format('truetype');
   font-weight: bold;
 }
+*{
+  border: 1px solid red;
+}
 
 body, textarea, input, select{
   font-family: 'TTForsRegular', sans-serif;

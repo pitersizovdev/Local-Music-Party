@@ -22,7 +22,7 @@ function ForUser() {
     >
       <div className={styles.wrapper}>
         <motion.div
-          className={styles.wrapper}
+          className={styles.content}
           initial={{ opacity: 0 }}
           animate={{ opacity: inView ? 1 : 0 }}
           transition={{ duration: 1 }}
@@ -46,80 +46,84 @@ function ForUser() {
             />
           )}
         </motion.div>
-
-        <motion.div
-          className={styles.blob5}
-          initial={{ opacity: 0, y: "100vh" }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
-          transition={{ duration: 1, delay: 1 }}
-        >
-          <motion.h3
-            className={styles.titleStep1}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: inView ? 1 : 0 }}
-            transition={{ duration: 1, delay: 1.5 }}
+        <div className={styles.blobs}>
+          <motion.div
+            className={styles.blob5}
+            id={styles.right}
+            initial={{ opacity: 0, y: "100vh" }}
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
+            transition={{ duration: 1, delay: 1 }}
           >
-            Узнайте о новых и набирающих <br /> популярность артистах
-          </motion.h3>
-          {inView && (
+            <motion.h3
+              className={styles.titleStep1}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: inView ? 1 : 0 }}
+              transition={{ duration: 1, delay: 1.5 }}
+            >
+              Узнайте о&nbsp;новых артистах
+            </motion.h3>
+            {inView && (
+              <motion.img
+                className={styles.blob5img}
+                src={Blob5}
+                alt="blob"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1 }}
+              />
+            )}
+          </motion.div>
+
+          <motion.div
+            className={styles.blob5}
+            id={styles.left}
+            initial={{ opacity: 0, y: "100vh" }}
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
+            transition={{ duration: 1, delay: 1.4 }}
+          >
+            <motion.h3
+              className={styles.titleStep1}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: inView ? 1 : 0 }}
+              transition={{ duration: 1, delay: 1.75 }}
+            >
+              Сможете запланировать поход на мероприятие
+            </motion.h3>
             <motion.img
               className={styles.blob5img}
-              src={Blob5}
+              src={Blob6}
               alt="blob"
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1 }}
+              animate={{ opacity: inView ? 1 : 0 }}
+              transition={{ duration: 1, delay: 2 }}
             />
-          )}
-        </motion.div>
+          </motion.div>
 
-        <motion.div
-          className={styles.blob6}
-          initial={{ opacity: 0, y: "100vh" }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
-          transition={{ duration: 1, delay: 1.4 }}
-        >
-          <motion.h3
-            className={styles.titleStep2}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: inView ? 1 : 0 }}
-            transition={{ duration: 1, delay: 1.75 }}
+          <motion.div
+            className={styles.blob5}
+            id={styles.right}
+            initial={{ opacity: 0, y: "100vh" }}
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
+            transition={{ duration: 1, delay: 1.7 }}
           >
-            Сможете запланировать поход на мероприятие
-          </motion.h3>
-          <motion.img
-            className={styles.blob6img}
-            src={Blob6}
-            alt="blob"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: inView ? 1 : 0 }}
-            transition={{ duration: 1, delay: 2 }}
-          />
-        </motion.div>
-
-        <motion.div
-          className={styles.blob7}
-          initial={{ opacity: 0, y: "100vh" }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
-          transition={{ duration: 1, delay: 1.7 }}
-        >
-          <motion.h3
-            className={styles.titleStep3}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: inView ? 1 : 0 }}
-            transition={{ duration: 1, delay: 2 }}
-          >
-            Посетите больше <br /> музыкальных <br /> мероприятиий!
-          </motion.h3>
-          <motion.img
-            className={styles.blob7img}
-            src={Blob7}
-            alt="blob"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: inView ? 1 : 0 }}
-            transition={{ duration: 1, delay: 2.25 }}
-          />
-        </motion.div>
+            <motion.h3
+              className={styles.titleStep1}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: inView ? 1 : 0 }}
+              transition={{ duration: 1, delay: 2 }}
+            >
+              Посетите больше мероприятиий!
+            </motion.h3>
+            <motion.img
+              className={styles.blob5img}
+              src={Blob7}
+              alt="blob"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: inView ? 1 : 0 }}
+              transition={{ duration: 1, delay: 2.25 }}
+            />
+          </motion.div>
+        </div>
       </div>
     </motion.div>
   );

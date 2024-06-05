@@ -68,7 +68,7 @@ function ForOrg() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.75 }}
         >
-          Получи 10% баллами от <br/>ресторанов-партнеров
+          Получайте 10% баллами от <br/>ресторанов-партнеров
         </motion.h3>
         <motion.img
           className={styles.blob4img}
