@@ -24,7 +24,7 @@
   flex-direction: column;
   width: 95%;
   margin: 0 auto;
-  padding-top: 10%;
+  padding-top: 2.5%;
 }
 .item {
   background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
