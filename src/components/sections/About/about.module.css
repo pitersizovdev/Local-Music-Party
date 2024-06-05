@@ -21,7 +21,7 @@
 .section h3 {
   font-weight: 500;
   text-shadow: 2px 2px 4px black;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .mockupMap {
@@ -112,16 +112,17 @@
     margin-left: 5%;
   }
   .blob2 {
-    display: block;
+    display: none;
     width: 250%;
     height: auto;
     margin: 0 auto 0 -150%;
   }
   .mockupMap {
     position: absolute;
-    scale: 40%;
+    scale: 50%;
     height: auto;
     z-index: 99;
     left: 0%;
+  
   }
 }
