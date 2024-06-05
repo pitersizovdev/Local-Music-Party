@@ -20,7 +20,7 @@
 .mockupMap {
   transform: scale(0.9);
   position: absolute;
-  bottom: -5.5em;
+  bottom: -8em;
   z-index: 1;
 }
 
