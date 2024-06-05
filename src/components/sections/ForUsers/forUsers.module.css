@@ -1,5 +1,5 @@
 .section {
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,8 +20,10 @@
 .mockupMap {
   transform: scale(0.9);
   position: absolute;
-  bottom: -8em;
-  z-index: 1;
+
+  z-index: 99;
+  bottom: -15em;
+  width: 25%;
 }
 
 .blob5,
@@ -100,7 +102,6 @@
   .blob7 {
     display: none;
   }
-
 
   .mockupMap {
     width: 250px;
