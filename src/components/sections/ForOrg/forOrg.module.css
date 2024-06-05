@@ -16,6 +16,7 @@
 
 .section h1 {
   font-size: 8em;
+
 }
 
 .logobg {
@@ -68,8 +69,8 @@
   .section {
     font-size: 4px;
   }
-  .section h1 {
-    margin-top: 0.4em;
+  .logobg {
+    display: none;
   }
   .blob4img {
     width: 120vw;
