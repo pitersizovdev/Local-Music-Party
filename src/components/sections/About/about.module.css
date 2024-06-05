@@ -26,11 +26,10 @@
 
 .mockupMap {
   position: absolute;
-  z-index: 0;
-  width: 20%;
+  scale: 60%;
   height: auto;
   z-index: 99;
-  bottom: 0;
+  left: 0;
 }
 .blobs {
   width: 100%;
@@ -79,12 +78,10 @@
   }
   .mockupMap {
     position: absolute;
-    z-index: 0;
-    width: 35%;
+    scale: 60%;
     height: auto;
     z-index: 99;
-    bottom: 0;
-    right: 10%;
+    left: 50%;
   }
   .blob1 {
     display: flex;
@@ -119,6 +116,10 @@
     margin: 0 auto 0 -150%;
   }
   .mockupMap {
-    width: 40%;
+    position: absolute;
+    scale: 40%;
+    height: auto;
+    z-index: 99;
+    left: 0%;
   }
 }
