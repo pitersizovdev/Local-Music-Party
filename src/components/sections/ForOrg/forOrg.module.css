@@ -112,23 +112,24 @@
   }
   .titleStep1 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 0%;
-    width: 50%;
+    width: 40%;
   }
-
+  .titleStep2 {
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 1%;
+    width: 70%;
+  }
   .titleStep3 {
     position: absolute;
-    top: 55%;
+    top: 40%;
     left: 12.5%;
     width: 70%;
   }
   .mockupMap {
     width: 45%;
-  }
-}
-@media (max-height: 640px) {
-  .mockupMap {
-    width: 40%;
   }
 }

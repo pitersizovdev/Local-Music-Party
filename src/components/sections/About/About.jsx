@@ -7,7 +7,7 @@ import Blob3 from "../../../assets/img/blob3.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import MapMockup from "../../features/MapMockup/MapMockup";
-import MockupMapLayer from "../../../assets/mockups/mockuplayer.png";
+
 
 function About() {
   const { ref, inView } = useInView({
@@ -32,15 +32,14 @@ function About() {
           Что внутри?
         </motion.h1>
 
-        <motion.img
+        <motion.div
           className={styles.mockupMap}
-          src={MockupMap}
-          alt="mockup"
           initial={{ y: "100vh" }}
           animate={inView ? { y: 0 } : { y: "100vh" }}
           transition={{ duration: 1 }}
-        ></motion.img>
-        <div className={styles.map}>{/*<MapMockup />*/}</div>
+        >
+          <MapMockup />
+        </motion.div>
 
         <div className={styles.blobs}>
           <div className={styles.blob1}>
@@ -49,7 +48,8 @@ function About() {
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 1, delay: 1.2 }}
             >
-            Афиша&nbsp;&mdash; подборки крупных событий и&nbsp;выступлений локальных артистов!
+              Афиша&nbsp;&mdash; подборки крупных событий и&nbsp;выступлений
+              локальных артистов!
             </motion.h3>
             <motion.img
               className={styles.blob1img}
@@ -72,7 +72,8 @@ function About() {
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 1, delay: 1.5 }}
             >
-              Эксклюзивные анонсы<br/> зарубежных исполнителей
+              Эксклюзивные анонсы
+              <br /> зарубежных исполнителей
             </motion.h3>
             <motion.img
               className={styles.blob2img}
@@ -83,7 +84,7 @@ function About() {
               transition={{ duration: 1, delay: 0.9 }}
             />
           </motion.div>
-{/*
+          {/*
           <motion.div
             className={styles.blob3}
             initial={{ opacity: 0 }}

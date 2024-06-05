@@ -1,5 +1,16 @@
-@media (max-width: 480px) {
-    .layer{
-        max-width: 450px;
-    }
+.MockupMapLayer {
+  position: absolute;
+  margin-top: -5%;
+  margin-left: -6%;
+  z-index: 999;
+}
+.layer {
+  position: relative;
+  z-index: 100;
+}
+.mockupMap {
+  margin-top: -174%;
+  margin-left: -6%;
+  top: 0;
+  z-index: 98;
 }
