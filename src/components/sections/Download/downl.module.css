@@ -1,5 +1,5 @@
 .section {
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,42 +10,45 @@
   position: relative;
 }
 .wrapper {
-  height: 95%;
+  height: 90%;
   width: 90%;
 }
-.minilogo, .qr, .android, .ios {
+.minilogo,
+.qr,
+.android,
+.ios {
   position: absolute;
 }
-  
+
 .minilogo {
   margin: 2em;
   height: 8.5em;
-  top: 0;
+  top: 2%;
   left: 0;
 }
-  
+
 .qr {
   margin: 2em;
   height: 8.5em;
-  top: 0;
+  top: 2%;
   right: 0;
 }
-  
+
 .android {
   cursor: pointer;
-  bottom: -2em;
+  bottom: 0%;
   left: 2em;
-  background-image: url('../../../assets/svg/android.svg');
+  background-image: url("../../../assets/svg/android.svg");
   background-size: cover;
   width: 15em;
   height: 15em;
 }
-  
+
 .ios {
   cursor: pointer;
-  bottom: -2em;
+  bottom: 0%;
   right: 2em;
-  background-image: url('../../../assets/svg/ios.svg');
+  background-image: url("../../../assets/svg/ios.svg");
   background-size: cover;
   width: 15em;
   height: 15em;
@@ -59,22 +62,22 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.video{
-  transform: scale(0.9);
+.video {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 1440px) {
   .section {
     font-size: 13px;
   }
-
 }
 
 @media (max-width: 768px) {
   .section {
     font-size: 10px;
   }
-  .video{
+  .video {
     transform: scale(0.5);
   }
 }
@@ -83,7 +86,7 @@
   .section {
     font-size: 10px;
   }
-  .video{
+  .video {
     transform: scale(0.4);
   }
 }
@@ -92,8 +95,7 @@
   .section {
     font-size: 8px;
   }
-  .video{
+  .video {
     transform: scale(0.4);
   }
 }
-
