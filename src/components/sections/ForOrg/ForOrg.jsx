@@ -18,7 +18,7 @@ function ForOrg() {
       ref={ref}
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
-    >
+    >   <div className={styles.wrapper}>
       <img
         className={styles.logobg}
         src={Logobg}
@@ -52,7 +52,7 @@ function ForOrg() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.75 }}
         >
-          Есть идея для <br/> мероприятия?
+          Осветим ваши идеи!
         </motion.h3>
         <motion.h3
           className={styles.titleStep2}
@@ -78,7 +78,7 @@ function ForOrg() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2.25 }}
         />
-      </motion.div>
+      </motion.div></div>
     </motion.div>
   );
 }

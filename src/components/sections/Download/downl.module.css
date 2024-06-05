@@ -1,11 +1,18 @@
 .section {
   font-size: 16px;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   scroll-snap-align: center;
   overflow: hidden;
   position: relative;
 }
-  
+.wrapper {
+  height: 95%;
+  width: 90%;
+}
 .minilogo, .qr, .android, .ios {
   position: absolute;
 }

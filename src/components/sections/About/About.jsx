@@ -22,6 +22,7 @@ function About() {
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
     >
+      <div className={styles.wrapper}>
       <motion.h1
         className={styles.title}
         initial={{ opacity: 0 }}
@@ -112,7 +113,7 @@ function About() {
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
         />
-      </motion.div>
+      </motion.div></div>
     </motion.div>
   );
 }

@@ -1,29 +1,34 @@
 .section {
   font-size: 16px;
-  padding: 0 5em 0 5em;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   scroll-snap-align: center;
-  position: relative; 
+  position: relative;
+}
+.wrapper {
+  height: 95%;
+  width: 90%;
 }
 
 .section h1 {
   font-size: 8em;
 }
 
-.wrapper {
-  height: 60vh;
+.accordion {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
 }
-.accordion{
-  width: 100%;
-}
-.item{
+.item {
   background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
   margin: 0 0 2em 0;
   padding: 0.5em 1em;
-  border-radius: 1em ;
+  border-radius: 1em;
   width: 100%;
 }
 .item h3 {
@@ -34,7 +39,7 @@
   font-size: 2em;
   margin: 0.5em 0 0.25em 0;
 }
-.title{
+.title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,12 +57,11 @@
   transition: max-height 3s ease-out;
 }
 
-
-.FaChevronDown, .FaChevronUp{
+.FaChevronDown,
+.FaChevronUp {
   font-size: 2em;
   margin: 0.25em 0.5em 0 0;
 }
-
 
 .footer {
   font-size: 16px;
@@ -67,7 +71,7 @@
   position: absolute;
   bottom: 0;
 }
-  
+
 .appname {
   font-size: 2em;
   margin-right: 2em;
@@ -83,7 +87,6 @@
   color: gray;
 }
 
-
 @media (max-width: 1440px) {
   .section {
     font-size: 13px;
@@ -91,7 +94,6 @@
   .footer {
     font-size: 16px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -101,7 +103,7 @@
   .footer {
     font-size: 9px;
   }
-  .footerIcon{
+  .footerIcon {
     width: 3em;
   }
 }
@@ -116,10 +118,10 @@
   .footer {
     font-size: 8px;
   }
-  .footerIcon{
+  .footerIcon {
     width: 2em;
   }
-  span{
+  span {
     display: none;
   }
   .section h1 {
@@ -134,10 +136,10 @@
   .footer {
     font-size: 8px;
   }
-  .footerIcon{
+  .footerIcon {
     width: 2em;
   }
-  .appname{
+  .appname {
     margin-right: 2em;
   }
   .social {
@@ -147,4 +149,3 @@
     padding-right: 1em;
   }
 }
-
