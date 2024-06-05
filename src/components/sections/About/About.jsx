@@ -1,13 +1,13 @@
-import React from 'react';
-import styles from './about.module.css';
-import MockupMap from '../../../assets/mockups/mockup.png';
-import Blob1 from '../../../assets/img/blob1.png';
-import Blob2 from '../../../assets/img/blob2.png';
-import Blob3 from '../../../assets/img/blob3.png';
+import React from "react";
+import styles from "./about.module.css";
+import MockupMap from "../../../assets/mockups/mockup.png";
+import Blob1 from "../../../assets/img/blob1.png";
+import Blob2 from "../../../assets/img/blob2.png";
+import Blob3 from "../../../assets/img/blob3.png";
 import { motion } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
-import MapMockup from '../../features/MapMockup/MapMockup';
-import MockupMapLayer from '../../../assets/mockups/mockuplayer.png';
+import { useInView } from "react-intersection-observer";
+import MapMockup from "../../features/MapMockup/MapMockup";
+import MockupMapLayer from "../../../assets/mockups/mockuplayer.png";
 
 function About() {
   const { ref, inView } = useInView({
@@ -23,97 +23,91 @@ function About() {
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
     >
       <div className={styles.wrapper}>
-      <motion.h1
-        className={styles.title}
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        Что внутри?
-      </motion.h1>
-
-
-      <motion.div
-     className={styles.mockupMap}
-     style={{
-       backgroundImage: `url(${MockupMap})`,
-       position: 'relative',
-       transform: 'scale(0.9)',
-     }}
-     initial={{ y: "100vh" }}
-     animate={inView ? { y: 0 } : { y: "100vh" }}
-     transition={{ duration: 1 }}
-   >
-    <img className={styles.layer} src={MockupMapLayer} alt="Mockup Layer" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} />
-    <div className={styles.map}>
-    <MapMockup />
-    </div>
-
-   </motion.div>
-
-      <div className={styles.blob1}>
-        <motion.h3
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 1, delay: 1.2 }}
-        >
-          Афиша – подборки крупных событий и выступлений локальных артистов!
-        </motion.h3>
-        <motion.img
-          className={styles.blob1img}
-          src={Blob1}
-          alt="blob"
+        <motion.h1
+          className={styles.title}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-        />
+        >
+          Что внутри?
+        </motion.h1>
+
+        <motion.img
+          className={styles.mockupMap}
+          src={MockupMap}
+          alt="mockup"
+          initial={{ y: "100vh" }}
+          animate={inView ? { y: 0 } : { y: "100vh" }}
+          transition={{ duration: 1 }}
+        ></motion.img>
+        <div className={styles.map}>{/*<MapMockup />*/}</div>
+
+        <div className={styles.blobs}>
+          <div className={styles.blob1}>
+            <motion.h3
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 1, delay: 1.2 }}
+            >
+            Афиша&nbsp;&mdash; подборки крупных событий и&nbsp;выступлений локальных артистов!
+            </motion.h3>
+            <motion.img
+              className={styles.blob1img}
+              src={Blob1}
+              alt="blob"
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            />
+          </div>
+
+          <motion.div
+            className={styles.blob2}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+          >
+            <motion.h3
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 1, delay: 1.5 }}
+            >
+              Эксклюзивные анонсы зарубежных исполнителей
+            </motion.h3>
+            <motion.img
+              className={styles.blob2img}
+              src={Blob2}
+              alt="blob"
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 1, delay: 0.9 }}
+            />
+          </motion.div>
+{/*
+          <motion.div
+            className={styles.blob3}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.3 }}
+          >
+            <motion.h3
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 1, delay: 1.9 }}
+            >
+              Поиск по городам, жанрам и площадкам
+            </motion.h3>
+            <motion.img
+              className={styles.blob3img}
+              src={Blob3}
+              alt="blob"
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 1, delay: 1.2 }}
+            />
+          </motion.div>*/}
+        </div>
       </div>
-
-      <motion.div
-        className={styles.blob2}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.8 }}
-      >
-        <motion.h3
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 1, delay: 1.5 }}
-        >
-          Эксклюзивные анонсы зарубежных исполнителей
-        </motion.h3>
-        <motion.img
-          className={styles.blob2img}
-          src={Blob2}
-          alt="blob"
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 1, delay: 0.9 }}
-        />
-      </motion.div>
-
-      <motion.div
-        className={styles.blob3}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.3 }}
-      >
-        <motion.h3
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 1, delay: 1.9 }}
-        >
-          Поиск по городам, жанрам и площадкам
-        </motion.h3>
-        <motion.img
-          className={styles.blob3img}
-          src={Blob3}
-          alt="blob"
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 1, delay: 1.2 }}
-        />
-      </motion.div></div>
     </motion.div>
   );
 }

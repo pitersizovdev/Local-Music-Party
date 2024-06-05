@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
     .layer{
-        width: 450px;
+        max-width: 450px;
     }
 }
