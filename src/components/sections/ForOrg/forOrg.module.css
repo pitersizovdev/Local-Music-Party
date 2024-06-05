@@ -1,10 +1,17 @@
 .section {
   font-size: 16px;
-  padding: 0 5em 0 5em;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   scroll-snap-align: center;
   overflow: hidden;
   position: relative;
+}
+.wrapper {
+  height: 95%;
+  width: 90%;
 }
 
 .section h1 {
@@ -66,7 +73,8 @@
   }
   .blob4img {
     width: 120vw;
-    rotate: -10deg;
+    rotate: -15deg;
+    margin-top: -10%;
   }
   .blob4 {
     top: -2%;
@@ -79,8 +87,7 @@
     margin: 3.5em 0em 0em 2em;
   }
   .titleStep2 {
-    margin: 6em 0em 0em 9.5em;
-    width: 200px;
+    display: none;
   }
 
   .titleStep3 {

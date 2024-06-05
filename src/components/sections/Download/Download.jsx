@@ -21,7 +21,7 @@ function Download() {
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
     >
-
+ <div className={styles.wrapper}>
 
 <div className={styles.scene}>
   <video className={styles.video} autoPlay loop muted playsInline>
@@ -58,7 +58,7 @@ function Download() {
         animate={inView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, x: "100vw", y: "100vh" }}
         transition={{ duration: 1, delay: 0.75 }}>
       </motion.div>
-
+      </div>
     </motion.div>
   );
 }
