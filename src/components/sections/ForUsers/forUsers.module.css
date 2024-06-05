@@ -57,7 +57,6 @@
   max-width: 50%;
   text-align: center;
 }
-
 .blob5img {
   width: 60%;
 }
@@ -70,5 +69,29 @@
   }
   .blob5 {
     margin-top: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .section {
+    font-size: 10px;
+  }
+  .mockupMap {
+    width: 50%;
+  }
+  .blobs {
+    margin-right: 0%;
+    width: 100%;
+  }
+  .blob5 {
+    margin-top: 5%;
+  }
+  #right {
+    display: none;
+  }
+  .blob5img {
+    width: 100%;
+  }
+  .titleStep1 {
+    max-width: 80%;
   }
 }
