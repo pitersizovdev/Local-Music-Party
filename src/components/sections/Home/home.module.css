@@ -29,7 +29,6 @@
   flex-direction: column;
 }
 .downl {
-  padding: 0 1em;
   background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
   color: #fcfcfc;
   font-family: "TTForsMedium", sans-serif;
@@ -40,7 +39,9 @@
   cursor: pointer;
   max-width: 50%;
   margin-top: 10%;
+  display: none;
 }
+
 .backgroundImage {
   position: absolute;
   top: 0;
