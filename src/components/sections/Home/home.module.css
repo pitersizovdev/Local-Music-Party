@@ -1,10 +1,46 @@
 .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
-  padding: 0 5em 0 5em;
-  height: 100vh;
   scroll-snap-align: center;
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  height: 95%;
+  width: 90%;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 8em;
+}
+
+.title2 {
+  font-weight: 500;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px black;
+  max-width: 50%;
+  margin-top: 5%;
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
+.downl {
+  padding: 0 1em;
+  background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
+  color: #fcfcfc;
+  font-family: "TTForsMedium", sans-serif;
+  font-size: 5em;
+  border: none;
+  border-radius: 2em;
+  display: none;
+  cursor: pointer;
+  max-width: 50%;
+  margin-top: 10%;
+}
 .backgroundImage {
   position: absolute;
   top: 0;
@@ -31,20 +67,6 @@
   background-position: left;
   z-index: -1;
   opacity: 0.8;
-}
-
-.title {
-  font-weight: bold;
-  font-size: 8em;
-  margin-top: 1em;
-}
-
-.title2 {
-  font-weight: 500;
-  font-size: 2.5em;
-  margin-top: 2em;
-  text-shadow: 2px 2px 4px black;
-  width: 500px;
 }
 
 .canva {
@@ -76,18 +98,6 @@
   z-index: 2;
 }
 
-.downl {
-  margin-top: 4em;
-  padding: 0 1em;
-  background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
-  color: #fcfcfc;
-  font-family: "TTForsMedium", sans-serif;
-  font-size: 5em;
-  border: none;
-  border-radius: 2em;
-  display: none;
-  cursor: pointer;
-}
 @media (max-width: 1600px) {
   .canva {
     width: 60em;
