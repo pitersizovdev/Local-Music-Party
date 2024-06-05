@@ -15,7 +15,7 @@
 }
 
 .section h1 {
-  font-size: 8em;
+  font-size: 4em;
 }
 
 .section h3 {
@@ -30,6 +30,7 @@
   width: 20%;
   height: auto;
   z-index: 99;
+  bottom: 0;
 }
 .blobs {
   width: 100%;
@@ -42,7 +43,7 @@
   display: flex;
   position: relative;
   align-items: center;
-  margin: 0 -30% 0 auto;
+  margin: 0 -15% 0 auto;
   padding-left: 25%;
 }
 .blob1img {
@@ -51,14 +52,14 @@
 }
 .blob1 h3 {
   position: absolute;
-  max-width: 40%;
+  max-width: 30%;
   margin-left: 5%;
 }
 .blob2 {
   display: flex;
   position: relative;
   align-items: center;
-  margin: 0 auto 0 -30%;
+  margin: 0 auto 0 -15%;
 }
 .blob2img {
   width: 100%;

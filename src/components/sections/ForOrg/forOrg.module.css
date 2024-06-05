@@ -15,12 +15,12 @@
 }
 
 .section h1 {
-  font-size: 8em;
+  font-size: 4em;
 }
 .section h3 {
   font-weight: 500;
   text-shadow: 2px 2px 4px black;
-  font-size: 2em;
+  font-size: 2.5em;
   z-index: 1;
 }
 
@@ -38,11 +38,13 @@
   height: auto;
   z-index: 99;
   right: 5%;
+  bottom: 0;
 }
 
 .blob4 {
   display: flex;
   position: relative;
+  width: 80%;
 }
 .blob4img {
   width: 70%;
@@ -55,7 +57,7 @@
 
 .titleStep1 {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 2.5%;
 }
 .titleStep2 {
@@ -67,5 +69,5 @@
 .titleStep3 {
   position: absolute;
   top: 60%;
-  left: 20%;
+  left: 15%;
 }

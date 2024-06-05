@@ -14,15 +14,17 @@
 }
 
 .section h1 {
-  font-size: 8em;
+  font-size: 4em;
 }
 
 .accordion {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 95%;
   margin: 0 auto;
+  padding-top: 10%;
 }
 .item {
   background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);

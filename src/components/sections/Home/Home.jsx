@@ -25,7 +25,7 @@ const Home = () => {
           </button>
           <div />
 
-         {/* <div className={styles.canva}>
+          <div className={styles.canva}>
             <Canvas>
               <Suspense fallback={false}>
                 <Environment preset="night" />
@@ -33,7 +33,7 @@ const Home = () => {
                 <Logo3dlowpoly />
               </Suspense>
             </Canvas>
-          </div>*/}
+          </div>
 
           <div className={styles.backgroundImage}></div>
           <div className={styles.backgroundImage2}></div>

@@ -54,12 +54,7 @@ function ForUser() {
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
             transition={{ duration: 1, delay: 1 }}
           >
-            <motion.h3
-              className={styles.titleStep1}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: inView ? 1 : 0 }}
-              transition={{ duration: 1, delay: 1.5 }}
-            >
+            <motion.h3 className={styles.titleStep1}>
               Узнайте о&nbsp;новых артистах
             </motion.h3>
             {inView && (
@@ -67,9 +62,7 @@ function ForUser() {
                 className={styles.blob5img}
                 src={Blob5}
                 alt="blob"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1 }}
+          
               />
             )}
           </motion.div>
@@ -81,21 +74,14 @@ function ForUser() {
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
             transition={{ duration: 1, delay: 1.4 }}
           >
-            <motion.h3
-              className={styles.titleStep1}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: inView ? 1 : 0 }}
-              transition={{ duration: 1, delay: 1.75 }}
-            >
+            <motion.h3 className={styles.titleStep1}>
               Сможете запланировать поход на мероприятие
             </motion.h3>
             <motion.img
               className={styles.blob5img}
               src={Blob6}
               alt="blob"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: inView ? 1 : 0 }}
-              transition={{ duration: 1, delay: 2 }}
+           
             />
           </motion.div>
 
@@ -106,21 +92,14 @@ function ForUser() {
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : "100vh" }}
             transition={{ duration: 1, delay: 1.7 }}
           >
-            <motion.h3
-              className={styles.titleStep1}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: inView ? 1 : 0 }}
-              transition={{ duration: 1, delay: 2 }}
-            >
+            <motion.h3 className={styles.titleStep1}>
               Посетите больше мероприятиий!
             </motion.h3>
             <motion.img
               className={styles.blob5img}
               src={Blob7}
               alt="blob"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: inView ? 1 : 0 }}
-              transition={{ duration: 1, delay: 2.25 }}
+         
             />
           </motion.div>
         </div>
