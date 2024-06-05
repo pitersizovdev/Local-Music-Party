@@ -16,12 +16,11 @@
 
 .section h1 {
   font-size: 4em;
-
 }
 .section h3 {
   font-weight: 500;
   text-shadow: 2px 2px 4px black;
-  font-size: 2em;
+  font-size: 1.8em;
   z-index: 9;
 }
 
@@ -30,7 +29,8 @@
   z-index: 0;
   width: 20%;
   height: auto;
-  z-index: 99; bottom: 0;
+  z-index: 99;
+  bottom: 0;
 }
 
 .blobs {
@@ -60,4 +60,15 @@
 
 .blob5img {
   width: 60%;
+}
+@media (max-width: 768px) {
+  .mockupMap {
+    width: 40%;
+  }
+  .blobs {
+    margin-right: -13%;
+  }
+  .blob5 {
+    margin-top: 5%;
+  }
 }

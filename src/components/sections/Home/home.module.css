@@ -71,10 +71,10 @@
 }
 
 .canva {
-  width: 80em;
-  height: 80em;
+  width: 75em;
+  height: 75em;
   position: absolute;
-  top: -6vh;
+  top: -5vh;
   right: 0vh;
   z-index: 0;
   animation: levitate 2.5s infinite alternate ease-in-out; /* Define the levitation animation */
