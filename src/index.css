@@ -23,6 +23,9 @@ body, textarea, input, select{
   font-family: 'TTForsRegular', sans-serif;
   color: #fcfcfc;
 }
+body{
+  min-width: 320px;
+}
 
 h2{
   font-family: 'TTForsBold', sans-serif;

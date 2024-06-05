@@ -1,157 +1,155 @@
 .section {
-    font-size: 16px;
-    padding: 0 5em 0 5em;
-    height: 100vh;
-    scroll-snap-align: center;
-  }
+  font-size: 16px;
+  padding: 0 5em 0 5em;
+  height: 100svh;
+  scroll-snap-align: center;
+}
 
 .section h1 {
   font-size: 8em;
 }
 
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35em;
-    width: auto;
-    margin: 4em 0;
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35em;
+  width: auto;
+  margin: 4em 0;
 }
 
 .leftcolumn {
-    width: 55em;
-    height: 18em;
-    font-size: 2em;
-    border-radius: 1em;
-    background: linear-gradient(270deg, #697bdf79 0%, #a1a0f073 100%);
-    color: #fcfcfc;
-    padding: 1em;
-    border: none;
-    outline: none;
-    resize: none; 
+  width: 55em;
+  height: 18em;
+  font-size: 2em;
+  border-radius: 1em;
+  background: linear-gradient(270deg, #697bdf79 0%, #a1a0f073 100%);
+  color: #fcfcfc;
+  padding: 1em;
+  border: none;
+  outline: none;
+  resize: none;
 }
 .rightcolumn {
-    margin: 0 0 0 1em;
-    font-size: 4em;
+  margin: 0 0 0 1em;
+  font-size: 4em;
 }
 
 .rightcolumn h3 {
-    font-weight: 500;
-    text-shadow: 2px 2px 4px black;
-    font-size: 0.5em;
-    margin: 0 0 2em 0;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px black;
+  font-size: 0.5em;
+  margin: 0 0 2em 0;
 }
-.rightset{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75em;
+.rightset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
 }
-.rightinput, .rightselect, .rightbutton{
-    font-size: 0.5em;
-    border-radius: 0.5em;
-    text-indent: 0.25em;
-    height: 2em;
-    border: none;
-    outline: none;
-    color: #fcfcfc;
-    background: linear-gradient(270deg, #697bdf79 0%, #a1a0f073 100%);
-    width: 100%;
+.rightinput,
+.rightselect,
+.rightbutton {
+  font-size: 0.5em;
+  border-radius: 0.5em;
+  text-indent: 0.25em;
+  height: 2em;
+  border: none;
+  outline: none;
+  color: #fcfcfc;
+  background: linear-gradient(270deg, #697bdf79 0%, #a1a0f073 100%);
+  width: 100%;
 }
 
 select option {
-    background-color: #697adf;
+  background-color: #697adf;
 }
 
-.rightbutton{
-    font-size: 0.5em;
-    background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
+.rightbutton {
+  font-size: 0.5em;
+  background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 @media (max-width: 1440px) {
-    .section {
-        font-size: 11px;
-    }
+  .section {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .section {
-        font-size: 8px;
-    }
-    form{
-        flex-direction: column;
-        height: 80em;
-        margin: 4em 0;
-    }
-    .leftcolumn{
-        width: 35em;
-
-    }
-    .rightcolumn{
-        margin: 1em 0;
-    }
-
+  .section {
+    font-size: 8px;
+  }
+  form {
+    flex-direction: column;
+    height: 80em;
+    margin: 4em 0;
+  }
+  .leftcolumn {
+    width: 35em;
+  }
+  .rightcolumn {
+    margin: 1em 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .section {
-        font-size: 8px;
-    }
-    form{
-        flex-direction: column;
-        height: 80em;
-    }
-    .section h1 {
-        font-size: 5em;
-    }
-    .leftcolumn{
-        width: 25em;
-    }
-    .rightcolumn{
-        margin: 1em 0;
-    }
-
+  .section {
+    font-size: 8px;
+  }
+  form {
+    flex-direction: column;
+    height: 80em;
+  }
+  .section h1 {
+    font-size: 5em;
+  }
+  .leftcolumn {
+    width: 25em;
+  }
+  .rightcolumn {
+    margin: 1em 0;
+  }
 }
 
 @media (max-width: 480px) {
-    .section {
-        font-size: 7px;
-    }
+  .section {
+    font-size: 7px;
+  }
 
-    form{
-        flex-direction: column;
-        height: 80em;
-    }
-    .section h1 {
-        font-size: 4em;
-      }
-      .leftcolumn{
-        width: 20em;
-    }
-    .rightcolumn{
-        margin: 1em 0;
-    }
+  form {
+    flex-direction: column;
+    height: 80em;
+  }
+  .section h1 {
+    font-size: 4em;
+    padding-top:1rem;
+  }
+  .leftcolumn {
+    width: 20em;
+  }
+  .rightcolumn {
+    margin: 1em 0;
+  }
 }
 
 @media (max-width: 320px) {
-    .section {
-        font-size: 5px;
-    }
-    form{
-        flex-direction: column;
-        font-size: 1.2em;
-
-    }
-    .section h1 {
-        font-size: 6em;
-      }
-      .rightcolumn h3{
-        font-size: 0.8em;
-      }
-
+  .section {
+    font-size: 5px;
+  }
+  form {
+    flex-direction: column;
+    font-size: 1.2em;
+  }
+  .section h1 {
+    font-size: 6em;
+  }
+  .rightcolumn h3 {
+    font-size: 0.8em;
+  }
 }

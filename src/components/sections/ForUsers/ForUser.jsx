@@ -1,11 +1,11 @@
-import React, { useRef } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import styles from './forUsers.module.css';
-import MockupMap from '../../../assets/mockups/mockup3.png';
-import Blob5 from '../../../assets/img/blob5.png';
-import Blob6 from '../../../assets/img/blob6.png';
-import Blob7 from '../../../assets/img/blob7.png';
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import styles from "./forUsers.module.css";
+import MockupMap from "../../../assets/mockups/mockup3.png";
+import Blob5 from "../../../assets/img/blob5.png";
+import Blob6 from "../../../assets/img/blob6.png";
+import Blob7 from "../../../assets/img/blob7.png";
 
 function ForUser() {
   const [ref, inView] = useInView({
@@ -58,7 +58,7 @@ function ForUser() {
           animate={{ opacity: inView ? 1 : 0 }}
           transition={{ duration: 1, delay: 1.5 }}
         >
-          Узнайте о новых и набирающих <br/> популярность артистах
+          Узнайте о новых и набирающих <br /> популярность артистах
         </motion.h3>
         {inView && (
           <motion.img
@@ -84,7 +84,7 @@ function ForUser() {
           animate={{ opacity: inView ? 1 : 0 }}
           transition={{ duration: 1, delay: 1.75 }}
         >
-          Сможете запланировать поход <br/> на мероприятие заранее
+          Сможете запланировать поход на мероприятие
         </motion.h3>
         <motion.img
           className={styles.blob6img}
@@ -108,7 +108,7 @@ function ForUser() {
           animate={{ opacity: inView ? 1 : 0 }}
           transition={{ duration: 1, delay: 2 }}
         >
-          Посетите больше <br/> музыкальных <br/> мероприятиий!
+          Посетите больше <br /> музыкальных <br /> мероприятиий!
         </motion.h3>
         <motion.img
           className={styles.blob7img}

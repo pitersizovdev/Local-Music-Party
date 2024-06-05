@@ -64,7 +64,7 @@ const Contact = () => {
   }
   return (
     <div className={styles.section}>
-        <h1>Свяжитесь с нами</h1>
+        <h1 >Свяжитесь с нами</h1>
 
         <form method='POST'>
           <textarea

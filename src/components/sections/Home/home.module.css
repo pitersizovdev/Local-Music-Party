@@ -1,105 +1,151 @@
 .section {
   font-size: 16px;
   padding: 0 5em 0 5em;
-  height: 100vh;
+  height: 100svh;
   scroll-snap-align: center;
 }
 
 .backgroundImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../../assets/img/logobg.png");
-    background-size: 91vh; 
-    background-repeat: no-repeat;
-    background-position: left;
-    z-index: -1;
-    opacity: 0.15;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/img/logobg.png");
+  background-size: 91vh;
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: -1;
+  opacity: 0.15;
+}
 
-  .backgroundImage2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../../assets/img/logobg2.png");
-    background-size: 91vh; 
-    background-repeat: no-repeat;
-    background-position: left;
-    z-index: -1;
-    opacity: 0.8;
-  }
+.backgroundImage2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/img/logobg2.png");
+  background-size: 91vh;
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: -1;
+  opacity: 0.8;
+}
 
-  .title{
-    font-weight: bold;
-    font-size: 8em;
-    margin-top: 1em;
-  }
+.title {
+  font-weight: bold;
+  font-size: 8em;
+  margin-top: 1em;
+}
 
-  .title2{
-    font-weight: 500;
-    font-size: 2.5em;
-    margin-top: 2em;
-    text-shadow: 2px 2px 4px black;
-    width: 500px;
-  }
+.title2 {
+  font-weight: 500;
+  font-size: 2.5em;
+  margin-top: 2em;
+  text-shadow: 2px 2px 4px black;
+  width: 500px;
+}
 
-  
+.canva {
+  width: 70em;
+  height: 70em;
+  position: absolute;
+  top: -6vh;
+  right: 0vh;
+  z-index: 0;
+  animation: levitate 2.5s infinite alternate ease-in-out; /* Define the levitation animation */
+}
+.downl a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      -30px
+    ); /* Adjust the distance for levitation effect */
+  }
+}
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.downl {
+  margin-top: 4em;
+  padding: 0 1em;
+  background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
+  color: #fcfcfc;
+  font-family: "TTForsMedium", sans-serif;
+  font-size: 5em;
+  border: none;
+  border-radius: 2em;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 1600px) {
   .canva {
-    width: 70em;
-    height: 70em;
+    width: 60em;
+    height: 60em;
     position: absolute;
     top: -6vh;
     right: 0vh;
     z-index: 0;
     animation: levitate 2.5s infinite alternate ease-in-out; /* Define the levitation animation */
   }
-  .downl a{
-    text-decoration: none;
-    color: inherit;
 }
-  
-  @keyframes levitate {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-30px); /* Adjust the distance for levitation effect */
-    }
+@media (max-width: 1440px) {
+  .section {
+    font-size: 14px;
   }
-  .header {
-    position: relative;
-    z-index: 2; 
-
+  .canva {
+    width: 60em;
+    height: 60em;
+    position: absolute;
+    top: 0vh;
+    right: 0vh;
+    z-index: 0;
+    animation: levitate 2.5s infinite alternate ease-in-out; /* Define the levitation animation */
   }
-
+}
+@media (max-width: 1300px) {
+  .section {
+    font-size: 12px;
+  }
+  .canva {
+    width: 60em;
+    height: 60em;
+    position: absolute;
+    top: 2vh;
+    right: 0vh;
+    z-index: 0;
+    animation: levitate 2.5s infinite alternate ease-in-out; /* Define the levitation animation */
+  }
+}
+@media (max-width: 1024px) {
+  .section {
+    font-size: 14px;
+  }
+  .canva {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    font-size: 6px;
+  }
+  .canva {
+    display: none;
+  }
   .downl {
-    margin-top: 4em;
-    padding: 0 1em;
-    background: linear-gradient(270deg, #697adf 0%, #a1a0f0 100%);
-    color: #fcfcfc;
-    font-family: 'TTForsMedium', sans-serif;
-    font-size: 5em;
-    border: none;
-    border-radius: 2em;
-    display:none;
-    cursor: pointer;
-}
-
-  @media (max-width: 480px) {
-    .section {
-      font-size: 6px;
-    }
-    .canva {
-      display: none;
-    }
-    .downl {
-      display:block;
+    display: block;
   }
-  .title2{
+  .title2 {
     font-weight: 500;
     font-size: 5em;
     width: 300px;
