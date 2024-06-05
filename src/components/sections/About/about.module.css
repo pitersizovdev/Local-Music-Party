@@ -103,3 +103,22 @@
     margin-left: 5%;
   }
 }
+@media (max-width: 425px) {
+  .section {
+    font-size: 10px;
+  }
+  .blob1 h3 {
+    position: absolute;
+    max-width: 80%;
+    margin-left: 5%;
+  }
+  .blob2 {
+    display: block;
+    width: 250%;
+    height: auto;
+    margin: 0 auto 0 -150%;
+  }
+  .mockupMap {
+    width: 40%;
+  }
+}
